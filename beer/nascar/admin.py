@@ -1,5 +1,5 @@
 from django.contrib import admin
-from nascar.models import Driver, Race, Results, Track
+from nascar.models import Bet, Driver, Player, Race, Results, Track
 
 # Register your models here.
 
@@ -21,8 +21,58 @@ class ChoiceAdmin(admin.ModelAdmin):
 
 @admin.register(Results)
 class ResultsAdmin(admin.ModelAdmin):
-    list_display = ("race", "driver", "car")
+    list_display = (
+        "race",
+        "driver",
+        "car",
+    )
     # autocomplete_fields = ["driver"]
+
+
+@admin.register(Player)
+class PlayerAdmin(admin.ModelAdmin):
+    list_display = ("player_name",)
+
+
+@admin.register(Bet)
+class BetAdmin(admin.ModelAdmin):
+    list_display = (
+        "player_name",
+        "first_pick",
+        "track_name",
+        "race_date",
+        "driver",
+        "finish",
+    )
+    # ordering = [
+    #     "race_date",
+    # ]
+    # BUG: odering
+    # TODO: add race date ordering
+
+    def race_date(self, instance):
+        return f"{instance.race.race_date} / {instance.race.track_name}"
+
+    def track_name(self, instance):
+        return instance.race.track
+
+    def driver(self, instance):
+        return instance.driver.name
+
+    def player_name(self, instance):
+        return f"{instance.player.player_name}"
+
+
+@admin.register(Race)
+class RaceAdmin(admin.ModelAdmin):
+    list_display = (
+        "race_name",
+        "race_date",
+        "track_track_name",
+    )
+
+    def track_track_name(self, instance):
+        return f"{instance.track}"
 
 
 # @admin.register(Race)
