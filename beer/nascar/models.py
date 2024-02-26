@@ -5,6 +5,7 @@
 #   * Make sure each ForeignKey and OneToOneField has `on_delete` set to the desired behavior
 #   * Remove `managed = False` lines if you wish to allow Django to create, modify, and delete the table
 # Feel free to rename the models, but don't rename db_table values or field names.
+import datetime
 from ast import mod
 from email.policy import default
 
@@ -49,6 +50,7 @@ class Bet(Base):
     class Meta:
         # managed = False
         db_table = "bet"
+        ordering = ["race"]
         unique_together = (
             (
                 "player",
@@ -120,11 +122,17 @@ class Race(Base):
         db_column="RACE_NAME", max_length=64
     )  # Field name made lowercase.
     race_date = models.DateField(db_column="RACE_DATE")  # Field name made lowercase.
+    race_time = models.TimeField(
+        db_column="Race Time",
+        blank=True,
+        null=True,
+        default=datetime.datetime.now().time(),
+    )
     track = models.ForeignKey(
         "Track", models.DO_NOTHING, db_column="TRACK_ID", blank=True, null=True
     )  # Field name made lowercase.
-    track_name = models.CharField(
-        db_column="TRACK_NAME", max_length=64
+    tv_radio = models.CharField(
+        db_column="TV/RADIO", max_length=64, default="Fox/PRN"
     )  # Field name made lowercase.
 
     def __str__(self) -> str:
@@ -133,7 +141,8 @@ class Race(Base):
     class Meta:
         # managed = False
         db_table = "race"
-        unique_together = (("race_date", "race_name"),)
+        ordering = ["race_date"]
+        unique_together = (("race_date", "track"),)
 
 
 class Results(Base):
@@ -175,6 +184,7 @@ class Track(Base):
 
     class Meta:
         models.UniqueConstraint(fields=["name"], name="unique_track_name")
+        ordering = ["name"]
 
     def __str__(self) -> str:
         return f"{self.name} {self.track_length} - {self.configuration}"

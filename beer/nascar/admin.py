@@ -38,16 +38,20 @@ class PlayerAdmin(admin.ModelAdmin):
 class BetAdmin(admin.ModelAdmin):
     list_display = (
         "player_name",
-        "first_pick",
-        "track_name",
-        "race_date",
         "driver",
+        "race_race_date",
+        "track_name",
         "finish",
+        "first_pick",
     )
-    # ordering = [
-    #     "race_date",
-    # ]
-    # BUG: odering
+    ordering = [
+        "race__race_date",
+        "player__player_name",
+    ]
+
+    def race_race_date(self, instance):
+        return instance.race.race_date
+
     # TODO: add race date ordering
 
     def race_date(self, instance):
@@ -65,21 +69,13 @@ class BetAdmin(admin.ModelAdmin):
 
 @admin.register(Race)
 class RaceAdmin(admin.ModelAdmin):
+    # date_hierarchy = "race_date"
     list_display = (
-        "race_name",
         "race_date",
         "track_track_name",
+        "race_name",
     )
+    ordering = ["-race_date"]
 
     def track_track_name(self, instance):
         return f"{instance.track}"
-
-
-# @admin.register(Race)
-# class RaceAdmin(admin.ModelAdmin):
-#     list_display = ("race_name", "race_date", "track_name")
-
-
-# admin.site.register(Results)
-# admin.site.register(TeamDriver)
-# admin.site.register(Team)
