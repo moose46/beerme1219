@@ -1,0 +1,31 @@
+Date	Race	Track	Start time	TV channel	Radio	Winner
+Feb. 6	The Clash	Los Angeles Coliseum	6 p.m.	Fox	MRN	Joey Logano
+Feb. 17	Daytona 500 Duels	Daytona International Speedway	7 p.m.	FS1	MRN	Brad Keselowski, Chris Buescher
+Feb. 20	Daytona 500	Daytona International Speedway	2:30 p.m.	Fox	MRN	Austin Cindric
+Feb. 27	Wise Power 400	Auto Club Speedway	3:30 p.m.	Fox	MRN	Kyle Larson
+March 6	Pennzoil 400	Las Vegas Motor Speedway	3:30 p.m.	Fox	PRN	Alex Bowman
+March 13	Ruoff Mortgage 500k	Phoenix Raceway	3:30 p.m.	Fox	MRN	Chase Briscoe
+March 20	Folds of Honor QuikTrip 500	Atlanta Motor Speedway	3 p.m.	Fox	PRN	William Byron
+March 27	EchoPark Automotive Texas Grand Prix	Circuit of the Americas	3:30 p.m.	Fox	PRN	Ross Chastain
+April 3	Toyota Owners 400	Richmond Raceway	3:30 p.m.	Fox	MRN	Denny Hamlin
+April 9	Blue-Emu Maximum Pain Relief 400	Martinsville Speedway	7:30 p.m.	FS1	MRN	William Byron
+April 17	Food City Dirt Race	Bristol Motor Speedway	7 p.m.	Fox	PRN	Kyle Busch
+April 24	GEICO 500	Talladega Superspeedway	3 p.m.	Fox	MRN	Ross Chastain
+May 1	DuraMAX Drydene 400	Dover Motor Speedway	3 p.m.	FS1	MRN	Chase Elliott
+May 8	Goodyear 400	Darlington Raceway	3:30 p.m.	FS1	MRN	Joey Logano
+May 15	AdventHealth 400	Kansas Speedway	3 p.m.	FS1	MRN	Kurt Busch
+May 22	NASCAR All-Star Open	Texas Motor Speedway	5:30 p.m.	FS1	PRN	Daniel Suarez
+May 22	NASCAR All-Star Race	Texas Motor Speedway	8 p.m.	FS1	PRN	Ryan Blaney
+May 29	Coca-Cola 600	Charlotte Motor Speedway	6 p.m.	Fox	PRN	Denny Hamlin
+June 5	Enjoy Illinois 300	World Wide Technology Raceway	3:30 p.m.	FS1	MRN	Joey Logano
+June 12	Toyota/Save Mart 350	Sonoma Raceway	4 p.m.	FS1	PRN	Daniel Suarez
+June 26	Ally 400	Nashville Superspeedway	5 p.m.	NBC	MRN	Chase Elliott
+July 3	Kwik Trip 250	Road America	3 p.m.	USA	MRN	Tyler Reddick
+July 10	Quaker State 400	Atlanta Motor Speedway	3 p.m.	USA	PRN	Chase Elliott
+July 17	Ambetter 301	New Hampshire Motor Speedway	3 p.m.	USA	PRN	Christopher Bell
+July 24	M&M's Fan Appreciation 400	Pocono Raceway	3 p.m.	USA	MRN	Chase Elliott
+July 31	Verizon 200	Indianapolis Motor Speedway Road Course	3 p.m.	NBC	IMS Radio	Tyler Reddick
+Aug. 7	FireKeepers Casino 400	Michigan International Speedway	3 p.m.	USA	MRN	Kevin Harvick
+Aug. 14	Federated Auto Parts 400	Richmond Raceway	3 p.m.	USA	MRN	Kevin Harvick
+Aug. 21	Go Bowling at the Glen	Watkins Glen International	3 p.m.	USA	MRN	Kyle Larson
+Aug. 27	Coke Zero Sugar 400	Daytona International Speedway	7 p.m.	NBC	MRN	Austin Dillon

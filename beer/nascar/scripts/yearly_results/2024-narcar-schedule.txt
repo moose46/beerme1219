@@ -1,0 +1,32 @@
+Date	Race	Track	Time	TV/Radio	Winner
+Sat., Feb. 3	Busch Light Clash at the Coliseum	LA Memorial Coliseum	8 p.m.	Fox/MRN	Denny Hamlin
+Thu., Feb. 15	Bluegreen Vacations Duel 1 at Daytona	Daytona International Speedway	7 p.m.	FS1/MRN	Tyler Reddick
+Thu., Feb. 15	Bluegreen Vacations Duel 2 at Daytona 	Daytona International Speedway	7 p.m.	FS1/MRN	Christopher Bell
+Mon., Feb. 19	Daytona 500	Daytona International Speedway	4 p.m.	Fox/MRN	William Byron
+Sun., Feb. 25	Ambetter Health 400 	Atlanta Motor Speedway	3 p.m.	Fox/PRN	Daniel Suarez
+Sun., Mar. 3	Pennzoil 400 (Buy Tickets)	Las Vegas Motor Speedway	3:30 p.m.	Fox/PRN	—
+Sun., Mar. 10	Shriners Children's 500 (Buy Tickets)	Phoenix Raceway	3:30 p.m.	Fox/MRN	—
+Sun., Mar. 17	Food City 500 (Buy Tickets)	Bristol Motor Speedway	3:30 p.m.	Fox/PRN	—
+Sun., Mar. 24	EchoPark Automotive Grand Prix (Buy Tickets)	Circuit of the Americas	3:30 p.m.	Fox/PRN	—
+Sun., Mar. 31	Toyota Owners 400 (Buy Tickets)	Richmond Raceway	7 p.m.	Fox/MRN	—
+Sun., Apr. 7	Cook Out 400 (Buy Tickets)	Martinsville Speedway	3 p.m.	FS1/MRN	—
+Sun., Apr. 14	AutoTrader EchoPark Automotive 400 (Buy Tickets)	Texas Motor Speedway	3:30 p.m.	FS1/PRN	—
+Sun., Apr. 21	GEICO 500 (Buy Tickets)	Talladega Superspeedway	3 p.m.	Fox/MRN	—
+Sun., Apr. 28	Wurth 400 (Buy Tickets)	Dover Motor Speedway	2 p.m.	FS1/PRN	—
+Sun., May 5	AdventHealth 400 (Buy Tickets)	Kansas Speedway	3 p.m.	FS1/MRN	—
+Sun., May 12	Goodyear 400 (Buy Tickets)	Darlington Raceway	3 p.m.	FS1/MRN	—
+Sun., May 19	NASCAR All-Star Open (Buy Tickets)	North Wilkesboro Speedway	8 p.m.	FS1/MRN	—
+Sun., May 19	NASCAR All-Star Race (Buy Tickets)	North Wilkesboro Speedway	8 p.m.	FS1/MRN	—
+Sun., May 26	Coca-Cola 600 (Buy Tickets)	Charlotte Motor Speedway 	6 p.m.	Fox/PRN	—
+Sun., June 2	Enjoy Illinois 300 (Buy Tickets)	World Wide Technology Raceway	3:30 p.m.	FS1/MRN	—
+Sun., June 9	Toyota/Save Mart 350 (Buy Tickets)	Sonoma Raceway	3:30 p.m.	Fox/PRN	—
+Sun., June 16	Iowa Corn 350 (Buy Tickets)	Iowa Speedway	7 p.m.	USA/MRN	—
+Sun., June 23	Cup Series race at New Hampshire (Buy Tickets)	New Hampshire Motor Speedway	2:30 p.m.	USA/PRN	—
+Sun., June 30	Ally 400 (Buy Tickets)	Nashville Superspeedway	3:30 p.m.	NBC/PRN	—
+Sun., July 7	Grant Park 165 (Buy Tickets)	Chicago Street Course	4:30 p.m.	NBC/MRN	—
+Sun., July 14	Cup Series Race at Pocono (Buy Tickets)	Pocono Raceway	2:30 p.m.	USA/MRN	—
+Sun., July 21	Brickyard 400 (Buy Tickets)	Indianapolis Motor Speedway	2:30 p.m.	NBC/IMS	—
+Sun., Aug. 11	Cook Out 400 (Buy Tickets)	Richmond Raceway	6 p.m.	USA/MRN	—
+Sun., Aug. 18	FireKeepers Casino 400 (Buy Tickets)	Michigan International Raceway	2:30 p.m.	USA/MRN	—
+Sat., Aug. 24	Coke Zero Sugar 400 (Buy Tickets)	Daytona International Speedway	7:30 p.m.	NBC/MRN	—
+Sun., Sept. 1	Cook Out Southern 500 (Buy Tickets)	Darlington Raceway	6 p.m.	USA/MRN	—

@@ -8,6 +8,9 @@
 import datetime
 from ast import mod
 from email.policy import default
+from enum import unique
+from tkinter import CASCADE
+from unittest.util import _MAX_LENGTH
 
 from django.contrib.auth.models import User
 from django.db import models
@@ -60,44 +63,6 @@ class Bet(Base):
         )
 
 
-class Driver(Base):
-    driver_id = models.AutoField(
-        db_column="DRIVER_ID", primary_key=True
-    )  # Field name made lowercase.
-    name = models.CharField(
-        db_column="NAME", unique=True, max_length=32
-    )  # Field name made lowercase.
-    car_no = models.IntegerField(
-        db_column="CAR_NO", blank=True, null=True
-    )  # Field name made lowercase.
-    sponsor = models.CharField(
-        db_column="SPONSOR", max_length=64, blank=True, null=True
-    )  # Field name made lowercase.
-    make = models.CharField(
-        db_column="MAKE", max_length=32, blank=True, null=True
-    )  # Field name made lowercase.
-    team = models.CharField(
-        db_column="TEAM", max_length=64, blank=True, null=True
-    )  # Field name made lowercase.
-    salary = models.IntegerField(
-        db_column="SALARY", blank=True, null=True
-    )  # Field name made lowercase.
-    starting_position = models.IntegerField(
-        db_column="STARTING_POSITION", blank=True, null=True
-    )  # Field name made lowercase.
-
-    def __unicode__(self):
-        return self.name
-
-    def __str__(self) -> str:
-        return self.name
-
-    class Meta:
-        # managed = False
-        db_table = "driver"
-        unique_together = (("name", "team", "car_no"),)
-
-
 class Player(Base):
     player_id = models.AutoField(
         db_column="PLAYER_ID", primary_key=True
@@ -145,6 +110,111 @@ class Race(Base):
         unique_together = (("race_date", "track"),)
 
 
+class Track(Base):
+    """TRACK,OWNER,MILES,CONFIG,CITY,STATE
+
+    Args:
+        Base (_type_): _description_
+    """
+
+    name = models.CharField(max_length=64, default="N/A", null=False)
+    owner = models.CharField(max_length=64, default="N/A")
+    track_length = models.FloatField(default=0.0, null=False)
+    configuration = models.CharField(max_length=32, default="Oval", null=False)
+    city = models.CharField(max_length=64, null=False, default="N/A")
+    state = models.CharField(max_length=64, null=False, default="N/A")
+
+    class Meta:
+        models.UniqueConstraint(fields=["name"], name="unique_track_name")
+        ordering = ["name"]
+
+    def __str__(self) -> str:
+        return f"{self.name} {self.track_length} - {self.configuration}"
+
+
+class Manufacturer(Base):
+    manufacturer_id = models.AutoField(
+        "manufacturer", db_column="MANUFACTURER_ID", primary_key=True
+    )
+    manufacturer_name = models.CharField(
+        db_column="MANUFACTURER_NAME",
+        unique=True,
+        max_length=64,
+        blank=False,
+        null=False,
+    )
+
+    class Meta:
+        models.UniqueConstraint(
+            fields=["manufacturer_name"], name="unique_manufacturer_name"
+        )
+
+    def __str__(self):
+        return self.manufacturer_name
+
+
+class Team(Base):
+    team_id = models.AutoField(db_column="TEAM_ID", primary_key=True)
+    team_name = models.CharField(
+        db_column="TEAM_NAME", unique=True, max_length=64, blank=False, null=False
+    )
+    manufacturer = models.ForeignKey(
+        "Manufacturer",
+        models.DO_NOTHING,
+        db_column="manufacturer_id",
+        blank=True,
+        null=True,
+    )
+    # make = models.CharField(
+    #     db_column="MAKE", max_length=32, blank=True, null=True
+    # )  # Field name made lowercase.
+
+    class Meta:
+        models.UniqueConstraint(fields=["team_name"], name="unique_team_name")
+
+    def __str__(self):
+        return self.team_name
+
+
+class Driver(Base):
+    driver_id = models.AutoField(
+        db_column="DRIVER_ID", primary_key=True
+    )  # Field name made lowercase.
+    name = models.CharField(
+        db_column="NAME", unique=True, max_length=32
+    )  # Field name made lowercase.
+    car_no = models.IntegerField(
+        db_column="CAR_NO", blank=True, null=True
+    )  # Field name made lowercase.
+    sponsor = models.CharField(
+        db_column="SPONSOR", max_length=64, blank=True, null=True
+    )  # Field name made lowercase.
+    make = models.CharField(
+        db_column="MAKE", max_length=32, blank=True, null=True
+    )  # Field name made lowercase.
+    team = models.CharField(
+        db_column="TEAM", max_length=64, blank=True, null=True
+    )  # Field name made lowercase.
+    team_id = models.ForeignKey(Team, on_delete=models.CASCADE)
+    salary = models.IntegerField(
+        db_column="SALARY", blank=True, null=True
+    )  # Field name made lowercase.
+    starting_position = models.IntegerField(
+        db_column="STARTING_POSITION", blank=True, null=True
+    )  # Field name made lowercase.
+
+    def __unicode__(self):
+        return self.name
+
+    def __str__(self) -> str:
+        return self.name
+
+    class Meta:
+        # managed = False
+        db_table = "driver"
+        unique_together = (("name", "team", "car_no"),)
+
+
 class Results(Base):
     driver = models.ForeignKey(
         Driver, models.DO_NOTHING, db_column="DRIVER_ID", blank=True, null=True
@@ -166,25 +236,3 @@ class Results(Base):
         # managed = False
         db_table = "results"
         unique_together = (("driver", "race"),)
-
-
-class Track(Base):
-    """TRACK,OWNER,MILES,CONFIG,CITY,STATE
-
-    Args:
-        Base (_type_): _description_
-    """
-
-    name = models.CharField(max_length=64, default="N/A", null=False)
-    owner = models.CharField(max_length=64, default="N/A")
-    track_length = models.FloatField(default=0.0, null=False)
-    configuration = models.CharField(max_length=32, default="Oval", null=False)
-    city = models.CharField(max_length=64, null=False, default="N/A")
-    state = models.CharField(max_length=64, null=False, default="N/A")
-
-    class Meta:
-        models.UniqueConstraint(fields=["name"], name="unique_track_name")
-        ordering = ["name"]
-
-    def __str__(self) -> str:
-        return f"{self.name} {self.track_length} - {self.configuration}"
