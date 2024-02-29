@@ -1,0 +1,1 @@
+[{"model": "nascar.player", "pk": 1, "fields": {"date_created": "2024-02-23T15:49:51.980Z", "user": 1, "date_updated": "2024-02-23T15:49:51.980Z", "player_name": "Greg"}}, {"model": "nascar.player", "pk": 2, "fields": {"date_created": "2024-02-23T15:50:20.442Z", "user": 1, "date_updated": "2024-02-23T15:50:20.442Z", "player_name": "Bob"}}]

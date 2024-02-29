@@ -1,4 +1,4 @@
-Date	Race	Track	Start time	TV channel	Radio	Winner
+Date	Race	Track	Start_time	TV_channel	Radio	Winner
 Feb. 6	The Clash	Los Angeles Coliseum	6 p.m.	Fox	MRN	Joey Logano
 Feb. 17	Daytona 500 Duels	Daytona International Speedway	7 p.m.	FS1	MRN	Brad Keselowski, Chris Buescher
 Feb. 20	Daytona 500	Daytona International Speedway	2:30 p.m.	Fox	MRN	Austin Cindric
