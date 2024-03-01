@@ -117,6 +117,10 @@ class Track(Base):
         Base (_type_): _description_
     """
 
+    id = models.AutoField(
+        db_column="ID", primary_key=True
+    )  # Field name made lowercase.
+
     name = models.CharField(max_length=64, default="N/A", null=False)
     owner = models.CharField(max_length=64, default="N/A")
     track_length = models.FloatField(default=0.0, null=False)

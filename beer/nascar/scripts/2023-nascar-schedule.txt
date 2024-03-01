@@ -1,12 +1,7 @@
-	Race	Track	Start time	TV channel	Radio	Winner
-Feb. 19	Daytona 500	Daytona International Speedway	2:30 p.m.	Fox	MRN	
-Ricky Stenhouse Jr.
-
+Date	Race	Track	Start_time	TV_channel	Radio	Winner
+Feb. 19	Daytona 500	Daytona International Speedway	2:30 p.m.	Fox	MRN	Ricky Stenhouse Jr.
 Feb. 26	Pala Casino 400	Auto Club Speedway	3:30 p.m.	Fox	MRN	Kyle Busch
-March 5 	
-Pennzoil 400
-
-Las Vegas Motor Speedway	3:30 p.m.	Fox	PRN	William Byron
+March 5 Pennzoil 400	Las Vegas Motor Speedway	3:30 p.m.	Fox	PRN	William Byron
 March 12	United Rentals Work United 500	Phoenix Raceway	3:30 p.m.	Fox	MRN	William Byron
 March 19	Ambetter Health 400	Atlanta Motor Speedway	3 p.m.	Fox	PRN	Joey Logano
 March 26	EchoPark Automotive Grand Prix	Circuit of the Americas	3:30 p.m.	Fox	PRN	Tyler Reddick
@@ -32,10 +27,6 @@ Aug. 6	FireKeepers Casino 400	Michigan International Speedway	2:30 p.m.	USA	MRN	
 Aug. 13	Verizon 200 at the Brickyard	Speedway Road Course	2:30 p.m.	NBC	IMS	Michael McDowell
 Aug. 20	Go Bowling at the Glen	Watkins Glen International	3 p.m.	USA	MRN	William Byron
 Aug. 26	Coke Zero Sugar 400	Daytona International Speedway	7 p.m.	NBC	MRN	Chris Buescher
-NASCAR schedule 2023: Playoff races
-(All times Eastern)
-
-Date	Race	Track	Start time	TV channel	Radio	Winner
 Sept. 3	Southern 500	Darlington Raceway	6 p.m.	USA	MRN	Kyle Larson
 Sept. 10	Hollywood Casino 400	Kansas Speedway	3 p.m.	USA	MRN	Tyler Reddick
 Sept. 16	Bass Pro Shops Night Race	Bristol Motor Speedway	7:30 p.m.	USA	PRN	Denny Hamlin
@@ -45,4 +36,4 @@ Oct. 8	Bank of America Roval 400	Charlotte Motor Speedway Roval	2 p.m.	NBC	PRN	A
 Oct. 15	South Point 400	Las Vegas Motor Speedway	2:30 p.m.	NBC	PRN	Kyle Larson
 Oct. 22	4EVER 400 Presented by Mobile 1	Homestead-Miami Speedway	2:30 p.m.	NBC	MRN	Christopher Bell
 Oct. 30	Xfinity 500	Martinsville Speedway	2 p.m.	NBC	MRN	Ryan Blaney
-Nov. 6	NASCAR Cup Series Championship	Phoenix Raceway	3 p.m.	NBC	MRN	—
+Nov. 6	NASCAR Cup Series Championship	Phoenix Raceway	3 p.m.	NBC	MRN	--
