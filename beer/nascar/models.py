@@ -117,11 +117,11 @@ class Track(Base):
         Base (_type_): _description_
     """
 
-    id = models.AutoField(
+    track_id = models.AutoField(
         db_column="ID", primary_key=True
     )  # Field name made lowercase.
 
-    name = models.CharField(max_length=64, default="N/A", null=False)
+    track_name = models.CharField(max_length=64, default="N/A", null=False)
     owner = models.CharField(max_length=64, default="N/A")
     track_length = models.FloatField(default=0.0, null=False)
     configuration = models.CharField(max_length=32, default="Oval", null=False)
@@ -130,10 +130,10 @@ class Track(Base):
 
     class Meta:
         models.UniqueConstraint(fields=["name"], name="unique_track_name")
-        ordering = ["name"]
+        ordering = ["track_name"]
 
     def __str__(self) -> str:
-        return f"{self.name} {self.track_length} - {self.configuration}"
+        return f"{self.track_name} {self.track_length} - {self.configuration}"
 
 
 class Manufacturer(Base):

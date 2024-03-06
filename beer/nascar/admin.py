@@ -13,7 +13,7 @@ class DriverAdmin(admin.ModelAdmin):
 
 @admin.register(Track)
 class TrackAdmin(admin.ModelAdmin):
-    list_display = ("name", "configuration", "track_length", "city", "state")
+    list_display = ("track_name", "configuration", "track_length", "city", "state")
 
 
 class ChoiceAdmin(admin.ModelAdmin):
@@ -86,7 +86,7 @@ class BetAdmin(admin.ModelAdmin):
 @admin.register(Race)
 class RaceAdmin(admin.ModelAdmin):
     # date_hierarchy = "race_date"
-    list_filter = ["track__name"]
+    list_filter = ["track__track_name"]
     list_display = (
         "race_date",
         "track_track_name",
@@ -95,4 +95,4 @@ class RaceAdmin(admin.ModelAdmin):
     ordering = ["-race_date"]
 
     def track_track_name(self, instance):
-        return f"{instance.track}"
+        return f"{instance.track_name}"
