@@ -1,0 +1,14 @@
+<table>
+  {% if list_of_races %}
+    {% for race in list_of_races %}
+      <tr>
+        <td>
+          <a href="#">{{ race.race_date }}</a><br /> {{ race.race_name }}<br />
+        </td>
+        <td>{{ race.track }}</td>
+      </tr>
+    {% endfor %}
+  {% else %}
+    <p>You Screwed up Bob!</p>
+  {% endif %}
+</table>

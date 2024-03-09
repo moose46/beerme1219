@@ -1,0 +1,12 @@
+{% if list_of_tracks %}
+  <ul>
+    {% for track in list_of_tracks %}
+      <li>
+        <a href="#">{{ track.track_name }}</a>
+        {{ track.configuration }} {{ track.track_length }} miles
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>You Screwed up Bob!</p>
+{% endif %}

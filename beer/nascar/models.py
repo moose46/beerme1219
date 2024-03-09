@@ -101,7 +101,7 @@ class Race(Base):
     )  # Field name made lowercase.
 
     def __str__(self) -> str:
-        return f"{self.race_name}"
+        return f"{self.race_name} - {self.race_date}"
 
     class Meta:
         # managed = False
