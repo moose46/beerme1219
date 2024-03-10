@@ -1,9 +1,10 @@
 # from django import template
 
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from django.template import loader
 
+from .forms import BetForm
 from .models import Driver, Race, Track
 
 
@@ -32,3 +33,14 @@ def drivers(request):
     list_of_drivers = Driver.objects.order_by("name")
     context = {"list_of_drivers": list_of_drivers}
     return render(request, "nascar/drivers.html", context=context)
+
+
+# https://ordinarycoders.com/blog/article/render-a-django-form-with-bootstrap
+# https://ordinarycoders.com/blog/article/django-models
+# https://stackoverflow.com/questions/75495403/django-returns-templatedoesnotexist-when-using-crispy-forms
+# pip install crispy-forms
+# pip install crispy-bootstrap4
+# make sure they are in the installed_apps section of the settings file
+def bets(request):
+    form = BetForm()
+    return render(request, "nascar/bets.html", {"form": form})

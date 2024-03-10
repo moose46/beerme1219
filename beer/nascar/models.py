@@ -6,11 +6,6 @@
 #   * Remove `managed = False` lines if you wish to allow Django to create, modify, and delete the table
 # Feel free to rename the models, but don't rename db_table values or field names.
 import datetime
-from ast import mod
-from email.policy import default
-from enum import unique
-from tkinter import CASCADE
-from unittest.util import _MAX_LENGTH
 
 from django.contrib.auth.models import User
 from django.db import models
@@ -101,7 +96,7 @@ class Race(Base):
     )  # Field name made lowercase.
 
     def __str__(self) -> str:
-        return f"{self.race_name} - {self.race_date}"
+        return f"{self.track} {self.race_name} - {self.race_date}"
 
     class Meta:
         # managed = False
@@ -210,8 +205,9 @@ class Driver(Base):
     def __unicode__(self):
         return self.name
 
+    # https://fstring.help/cheat/
     def __str__(self) -> str:
-        return self.name
+        return f"{self.car_no} - {self.name} / {self.team}"
 
     class Meta:
         # managed = False
