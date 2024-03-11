@@ -23,16 +23,16 @@ class Base(models.Model):
 
 
 class Bet(Base):
-    player = models.ForeignKey(
+    player_fk = models.ForeignKey(
         "Player", models.DO_NOTHING, db_column="PLAYER_ID", blank=True, null=True
     )  # Field name made lowercase.
-    race = models.ForeignKey(
+    race_fk = models.ForeignKey(
         "Race", models.DO_NOTHING, db_column="RACE_ID", blank=True, null=True
     )  # Field name made lowercase.
     # track = models.ForeignKey(
     #     "Track", models.DO_NOTHING, db_column="TRACK_ID", blank=True, null=True
     # )  # Field name made lowercase.
-    driver = models.ForeignKey(
+    driver_fk = models.ForeignKey(
         "Driver",
         models.DO_NOTHING,
         db_column="DRIVER_ID",
@@ -48,12 +48,12 @@ class Bet(Base):
     class Meta:
         # managed = False
         db_table = "bet"
-        ordering = ["race"]
+        ordering = ["race_fk"]
         unique_together = (
             (
-                "player",
+                "player_fk",
                 "first_pick",
-                "race",
+                "race_fk",
             ),
         )
 
@@ -88,7 +88,7 @@ class Race(Base):
         null=True,
         default=datetime.datetime.now().time(),
     )
-    track = models.ForeignKey(
+    track_fk = models.ForeignKey(
         "Track", models.DO_NOTHING, db_column="TRACK_ID", blank=True, null=True
     )  # Field name made lowercase.
     tv_radio = models.CharField(
@@ -96,13 +96,13 @@ class Race(Base):
     )  # Field name made lowercase.
 
     def __str__(self) -> str:
-        return f"{self.track} {self.race_name} - {self.race_date}"
+        return f"{self.track_fk} {self.race_name} - {self.race_date}"
 
     class Meta:
         # managed = False
         db_table = "race"
         ordering = ["race_date"]
-        unique_together = (("race_date", "track"),)
+        unique_together = (("race_date", "track_fk"),)
 
 
 class Track(Base):
@@ -128,7 +128,7 @@ class Track(Base):
         ordering = ["track_name"]
 
     def __str__(self) -> str:
-        return f"{self.track_name} {self.track_length} - {self.configuration}"
+        return f"{self.track_name}"
 
 
 class Manufacturer(Base):
@@ -194,7 +194,7 @@ class Driver(Base):
     team = models.CharField(
         db_column="TEAM", max_length=64, blank=True, null=True
     )  # Field name made lowercase.
-    team_id = models.ForeignKey(Team, on_delete=models.CASCADE)
+    team_fk = models.ForeignKey(Team, on_delete=models.CASCADE)
     salary = models.IntegerField(
         db_column="SALARY", blank=True, null=True
     )  # Field name made lowercase.
