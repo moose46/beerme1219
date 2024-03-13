@@ -77,8 +77,8 @@ def run():
             race = Race()
             # race.race_date = race_date
             # lookup track id
-            if Track.objects.filter(name=row.Track):
-                track = Track.objects.get(name=row.Track)
+            if Track.objects.filter(track_name=row.Track):
+                track = Track.objects.get(track_name=row.Track)
                 race.track = track
                 print(race.track)
             else:

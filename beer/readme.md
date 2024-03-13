@@ -10,10 +10,12 @@
 # To load NASCAR drivers
 
     cd to nascar/scripts
-    py ../../manage.py runscript load_drivers_from_csv
+    py ../../manage.py runscript load_drivers_from_csvhttps://books.agiliq.com/projects/django-orm-cookbook/en/latest/subquery.html
 
 # To run server on port 8081
 
-     py manage.py runserver 8081
+    open bash terminal
+    cd beer
+    python manage.py runserver 8081
 
 ## To view the data in a browser: [Admin](http://127.0.0.1:8081/admin)

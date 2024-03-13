@@ -1,1 +1,86 @@
-[{"model": "nascar.bet", "pk": 1, "fields": {"date_created": "2024-02-23T15:59:58.040Z", "user": 1, "date_updated": "2024-02-23T18:31:57.717Z", "player": 1, "race": 1, "driver": 15, "finish": 32, "first_pick": true}}, {"model": "nascar.bet", "pk": 2, "fields": {"date_created": "2024-02-23T16:00:21.816Z", "user": 1, "date_updated": "2024-02-23T18:31:48.040Z", "player": 2, "race": 1, "driver": 40, "finish": 14, "first_pick": false}}, {"model": "nascar.bet", "pk": 3, "fields": {"date_created": "2024-02-23T17:53:16.085Z", "user": 1, "date_updated": "2024-02-26T00:25:30.174Z", "player": 2, "race": 2, "driver": 15, "finish": 28, "first_pick": true}}, {"model": "nascar.bet", "pk": 4, "fields": {"date_created": "2024-02-23T17:53:24.796Z", "user": 1, "date_updated": "2024-02-26T00:25:43.260Z", "player": 1, "race": 2, "driver": 29, "finish": 32, "first_pick": true}}, {"model": "nascar.bet", "pk": 5, "fields": {"date_created": "2024-02-24T00:35:15.821Z", "user": 1, "date_updated": "2024-02-24T00:35:15.821Z", "player": 1, "race": 3, "driver": 44, "finish": 0, "first_pick": true}}, {"model": "nascar.bet", "pk": 6, "fields": {"date_created": "2024-02-24T00:36:10.772Z", "user": 1, "date_updated": "2024-02-25T14:00:55.531Z", "player": 2, "race": 3, "driver": 44, "finish": 0, "first_pick": false}}]
+[
+  {
+    "model": "nascar.bet",
+    "pk": 1,
+    "fields": {
+      "date_created": "2024-02-23T15:59:58.040Z",
+      "user": 1,
+      "date_updated": "2024-02-23T18:31:57.717Z",
+      "player": 1,
+      "race": 1,
+      "driver": 15,
+      "finish": 32,
+      "first_pick": true
+    }
+  },
+  {
+    "model": "nascar.bet",
+    "pk": 2,
+    "fields": {
+      "date_created": "2024-02-23T16:00:21.816Z",
+      "user": 1,
+      "date_updated": "2024-02-23T18:31:48.040Z",
+      "player": 2,
+      "race": 1,
+      "driver": 40,
+      "finish": 14,
+      "first_pick": false
+    }
+  },
+  {
+    "model": "nascar.bet",
+    "pk": 3,
+    "fields": {
+      "date_created": "2024-02-23T17:53:16.085Z",
+      "user": 1,
+      "date_updated": "2024-02-26T00:25:30.174Z",
+      "player": 2,
+      "race": 2,
+      "driver": 15,
+      "finish": 28,
+      "first_pick": true
+    }
+  },
+  {
+    "model": "nascar.bet",
+    "pk": 4,
+    "fields": {
+      "date_created": "2024-02-23T17:53:24.796Z",
+      "user": 1,
+      "date_updated": "2024-02-26T00:25:43.260Z",
+      "player": 1,
+      "race": 2,
+      "driver": 29,
+      "finish": 32,
+      "first_pick": true
+    }
+  },
+  {
+    "model": "nascar.bet",
+    "pk": 5,
+    "fields": {
+      "date_created": "2024-02-24T00:35:15.821Z",
+      "user": 1,
+      "date_updated": "2024-03-12T13:35:35.983Z",
+      "player": 1,
+      "race": 3,
+      "driver": 4,
+      "finish": 5,
+      "first_pick": false
+    }
+  },
+  {
+    "model": "nascar.bet",
+    "pk": 6,
+    "fields": {
+      "date_created": "2024-02-24T00:36:10.772Z",
+      "user": 1,
+      "date_updated": "2024-03-12T13:35:32.836Z",
+      "player": 2,
+      "race": 3,
+      "driver": 17,
+      "finish": 18,
+      "first_pick": true
+    }
+  }
+]

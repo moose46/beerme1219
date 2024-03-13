@@ -35,6 +35,7 @@ from nascar.models import Driver
 def run():
     user = User.objects.get(pk=1)
     # with open(Path.cwd() / "scripts" / "drivers.csv") as f:
+    print(Path.cwd())
     with open(Path.cwd() / "drivers.csv") as f:
         f_csv = csv.reader(f, delimiter="\t")
         headers = next(f_csv)
@@ -48,7 +49,7 @@ def run():
             d.car_no = row.NO
             d.sponsor = row.SPONSOR
             d.make = row.MAKE
-            d.team = row.TEAM
+            # d.team = row.TEAM
             d.salary = row.SALARY
             d.user = user
             d.save()

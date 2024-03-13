@@ -1,1 +1,770 @@
-[{"model": "nascar.driver", "pk": 1, "fields": {"date_created": "2024-02-22T22:56:09.617Z", "user": 1, "date_updated": "2024-02-27T20:42:16.650Z", "name": "Ross Chastain", "car_no": 1, "sponsor": "AdventHealth", "make": "Chevrolet", "team": "TRACKHOUSE RACING TEAM", "team_id": 6, "salary": 12000, "starting_position": null}}, {"model": "nascar.driver", "pk": 2, "fields": {"date_created": "2024-02-22T22:56:09.622Z", "user": 1, "date_updated": "2024-02-27T21:04:46.517Z", "name": "Aric Almirola", "car_no": 10, "sponsor": "Smithfield", "make": "Ford", "team": "Stewart-Haas Racing", "team_id": 16, "salary": 8000, "starting_position": null}}, {"model": "nascar.driver", "pk": 3, "fields": {"date_created": "2024-02-22T22:56:09.629Z", "user": 1, "date_updated": "2024-02-27T20:57:16.388Z", "name": "Denny Hamlin", "car_no": 11, "sponsor": "FedEx", "make": "Toyota", "team": "Joe Gibbs Racing", "team_id": 14, "salary": 11000, "starting_position": null}}, {"model": "nascar.driver", "pk": 4, "fields": {"date_created": "2024-02-22T22:56:09.636Z", "user": 1, "date_updated": "2024-02-27T20:53:07.838Z", "name": "Ryan Blaney", "car_no": 12, "sponsor": "Menards", "make": "Ford", "team": "Team Penske", "team_id": 11, "salary": 12000, "starting_position": null}}, {"model": "nascar.driver", "pk": 5, "fields": {"date_created": "2024-02-22T22:56:09.641Z", "user": 1, "date_updated": "2024-02-27T20:51:17.974Z", "name": "Chase Briscoe", "car_no": 14, "sponsor": "Mahindra Tractors", "make": "Ford", "team": "Stewart-Haas Racing", "team_id": 10, "salary": 10000, "starting_position": null}}, {"model": "nascar.driver", "pk": 6, "fields": {"date_created": "2024-02-22T22:56:09.645Z", "user": 1, "date_updated": "2024-02-27T21:04:10.877Z", "name": "J.J. Yeley", "car_no": 51, "sponsor": "Nurtec", "make": "Ford", "team": "RICK WARE RACING", "team_id": 16, "salary": 3000, "starting_position": null}}, {"model": "nascar.driver", "pk": 7, "fields": {"date_created": "2024-02-22T22:56:09.650Z", "user": 1, "date_updated": "2024-02-27T20:44:04.912Z", "name": "Todd Gilliland", "car_no": 36, "sponsor": "Wellcare", "make": "Ford", "team": "Front Row Motorsports", "team_id": 7, "salary": 8000, "starting_position": null}}, {"model": "nascar.driver", "pk": 8, "fields": {"date_created": "2024-02-22T22:56:09.655Z", "user": 1, "date_updated": "2024-02-27T21:03:37.673Z", "name": "Riley Herbst", "car_no": 15, "sponsor": "Adrenaline Shoc", "make": "Ford", "team": "RICK WARE RACING", "team_id": 16, "salary": 3000, "starting_position": null}}, {"model": "nascar.driver", "pk": 9, "fields": {"date_created": "2024-02-22T22:56:09.660Z", "user": 1, "date_updated": "2024-02-27T20:35:57.800Z", "name": "AJ Allmendinger", "car_no": 16, "sponsor": "Adrenaline Shoc", "make": "Chevrolet", "team": "Kaulig Racing", "team_id": 3, "salary": 6000, "starting_position": null}}, {"model": "nascar.driver", "pk": 10, "fields": {"date_created": "2024-02-22T22:56:09.665Z", "user": 1, "date_updated": "2024-02-27T20:47:23.829Z", "name": "Chris Buescher", "car_no": 17, "sponsor": "Fastenal", "make": "Ford", "team": "RFK Racing", "team_id": 8, "salary": 10000, "starting_position": null}}, {"model": "nascar.driver", "pk": 11, "fields": {"date_created": "2024-02-22T22:56:09.670Z", "user": 1, "date_updated": "2024-02-27T20:57:05.203Z", "name": "Martin Truex Jr.", "car_no": 19, "sponsor": "Bass Pro Shops", "make": "Toyota", "team": "Joe Gibbs Racing", "team_id": 14, "salary": 11000, "starting_position": null}}, {"model": "nascar.driver", "pk": 12, "fields": {"date_created": "2024-02-22T22:56:09.674Z", "user": 1, "date_updated": "2024-02-27T20:52:46.811Z", "name": "Austin Cindric", "car_no": 2, "sponsor": "Discount Tire", "make": "Ford", "team": "Team Penske", "team_id": 11, "salary": 9000, "starting_position": null}}, {"model": "nascar.driver", "pk": 13, "fields": {"date_created": "2024-02-22T22:56:09.679Z", "user": 1, "date_updated": "2024-02-27T20:56:51.274Z", "name": "Christopher Bell", "car_no": 20, "sponsor": "Rheem", "make": "Toyota", "team": "Joe Gibbs Racing", "team_id": 14, "salary": 12000, "starting_position": null}}, {"model": "nascar.driver", "pk": 14, "fields": {"date_created": "2024-02-22T22:56:09.683Z", "user": 1, "date_updated": "2024-02-27T20:54:35.691Z", "name": "Harrison Burton", "car_no": 21, "sponsor": "Motorcraft", "make": "Ford", "team": "Wood Brothers", "team_id": 12, "salary": 7000, "starting_position": null}}, {"model": "nascar.driver", "pk": 15, "fields": {"date_created": "2024-02-22T22:56:09.688Z", "user": 1, "date_updated": "2024-02-27T20:53:27.320Z", "name": "Joey Logano", "car_no": 22, "sponsor": "Shell-Pennzoil", "make": "Ford", "team": "Team Penske", "team_id": 11, "salary": 11000, "starting_position": null}}, {"model": "nascar.driver", "pk": 16, "fields": {"date_created": "2024-02-22T22:56:09.692Z", "user": 1, "date_updated": "2024-02-27T20:55:11.369Z", "name": "Bubba Wallace", "car_no": 23, "sponsor": "McDonalds", "make": "Toyota", "team": "23XI Racing", "team_id": 13, "salary": 9000, "starting_position": null}}, {"model": "nascar.driver", "pk": 17, "fields": {"date_created": "2024-02-22T22:56:09.697Z", "user": 1, "date_updated": "2024-02-22T22:56:09.697Z", "name": "William Byron", "car_no": 24, "sponsor": "Axalta", "make": "Chevrolet", "team": "Hendrick Motorsports", "team_id": 1, "salary": 11000, "starting_position": null}}, {"model": "nascar.driver", "pk": 18, "fields": {"date_created": "2024-02-22T22:56:09.702Z", "user": 1, "date_updated": "2024-02-27T20:38:02.679Z", "name": "Austin Dillon", "car_no": 3, "sponsor": "Bass Pro Shops", "make": "Chevrolet", "team": "Richard Childress Racing", "team_id": 4, "salary": 9000, "starting_position": null}}, {"model": "nascar.driver", "pk": 19, "fields": {"date_created": "2024-02-22T22:56:09.706Z", "user": 1, "date_updated": "2024-02-27T20:49:49.069Z", "name": "Justin Haley", "car_no": 31, "sponsor": "LeafFilter Gutter Protection", "make": "Chevrolet", "team": "Kaulig Racing", "team_id": 9, "salary": 9000, "starting_position": null}}, {"model": "nascar.driver", "pk": 20, "fields": {"date_created": "2024-02-22T22:56:09.710Z", "user": 1, "date_updated": "2024-02-27T20:43:48.056Z", "name": "Michael McDowell", "car_no": 34, "sponsor": "Love's Travel Stops", "make": "Ford", "team": "Front Row Motorsports", "team_id": 7, "salary": 10000, "starting_position": null}}, {"model": "nascar.driver", "pk": 21, "fields": {"date_created": "2024-02-22T22:56:09.716Z", "user": 1, "date_updated": "2024-02-27T20:40:24.403Z", "name": "Zane Smith", "car_no": 71, "sponsor": null, "make": null, "team": "Front Row Motorsports", "team_id": 5, "salary": 3000, "starting_position": null}}, {"model": "nascar.driver", "pk": 22, "fields": {"date_created": "2024-02-22T22:56:09.720Z", "user": 1, "date_updated": "2024-02-27T21:04:54.553Z", "name": "Kevin Harvick", "car_no": 4, "sponsor": "GEARWRENCH", "make": "Ford", "team": "Stewart-Haas Racing", "team_id": 16, "salary": 11000, "starting_position": null}}, {"model": "nascar.driver", "pk": 23, "fields": {"date_created": "2024-02-22T22:56:09.725Z", "user": 1, "date_updated": "2024-02-27T20:51:33.377Z", "name": "Ryan Preece", "car_no": 41, "sponsor": "Haas Automation", "make": "Ford", "team": "Stewart-Haas Racing", "team_id": 10, "salary": 3000, "starting_position": null}}, {"model": "nascar.driver", "pk": 24, "fields": {"date_created": "2024-02-22T22:56:09.729Z", "user": 1, "date_updated": "2024-02-27T20:51:02.989Z", "name": "Noah Gragson", "car_no": 42, "sponsor": "Black Rifle Coffee", "make": "Chevrolet", "team": "Legacy Motor Club", "team_id": 10, "salary": 5000, "starting_position": null}}, {"model": "nascar.driver", "pk": 25, "fields": {"date_created": "2024-02-22T22:56:09.734Z", "user": 1, "date_updated": "2024-02-27T20:58:19.268Z", "name": "Erik Jones", "car_no": 43, "sponsor": "Focus Factor", "make": "Chevrolet", "team": "Legacy Motor Club", "team_id": 15, "salary": 9000, "starting_position": null}}, {"model": "nascar.driver", "pk": 26, "fields": {"date_created": "2024-02-22T22:56:09.738Z", "user": 1, "date_updated": "2024-02-27T20:55:24.140Z", "name": "Tyler Reddick", "car_no": 45, "sponsor": "Monster Energy", "make": "Toyota", "team": "23XI Racing", "team_id": 13, "salary": 11000, "starting_position": null}}, {"model": "nascar.driver", "pk": 27, "fields": {"date_created": "2024-02-22T22:56:09.744Z", "user": 1, "date_updated": "2024-02-27T20:35:38.504Z", "name": "Ricky Stenhouse Jr.", "car_no": 47, "sponsor": "Kroger", "make": "Chevrolet", "team": "JTG Daugherty Racing", "team_id": 2, "salary": 10000, "starting_position": null}}, {"model": "nascar.driver", "pk": 28, "fields": {"date_created": "2024-02-22T22:56:09.749Z", "user": 1, "date_updated": "2024-02-27T20:33:27.902Z", "name": "Alex Bowman", "car_no": 48, "sponsor": "Ally", "make": "Chevrolet", "team": "Hendrick Motorsports", "team_id": 1, "salary": 11000, "starting_position": null}}, {"model": "nascar.driver", "pk": 29, "fields": {"date_created": "2024-02-22T22:56:09.753Z", "user": 1, "date_updated": "2024-02-22T22:56:09.753Z", "name": "Kyle Larson", "car_no": 5, "sponsor": "HendrickCars.com", "make": "Chevrolet", "team": "Hendrick Motorsports", "team_id": 1, "salary": 11000, "starting_position": null}}, {"model": "nascar.driver", "pk": 30, "fields": {"date_created": "2024-02-22T22:56:09.759Z", "user": 1, "date_updated": "2024-02-27T21:02:58.239Z", "name": "Conor Daly", "car_no": 50, "sponsor": "Dent Wizard", "make": "Chevrolet", "team": null, "team_id": 16, "salary": 3000, "starting_position": null}}, {"model": "nascar.driver", "pk": 31, "fields": {"date_created": "2024-02-22T22:56:09.763Z", "user": 1, "date_updated": "2024-02-27T20:48:22.485Z", "name": "Cody Ware", "car_no": 51, "sponsor": "Nurtec", "make": "Ford", "team": "RICK WARE RACING", "team_id": 9, "salary": 5000, "starting_position": null}}, {"model": "nascar.driver", "pk": 32, "fields": {"date_created": "2024-02-22T22:56:09.767Z", "user": 1, "date_updated": "2024-02-27T20:57:33.370Z", "name": "Ty Gibbs", "car_no": 54, "sponsor": "Monster Energy", "make": "Toyota", "team": "Joe Gibbs Racing", "team_id": 14, "salary": 6000, "starting_position": null}}, {"model": "nascar.driver", "pk": 33, "fields": {"date_created": "2024-02-22T22:56:09.771Z", "user": 1, "date_updated": "2024-02-27T20:47:07.261Z", "name": "Brad Keselowski", "car_no": 6, "sponsor": "Kohler Power Reserve", "make": "Ford", "team": "RFK Racing", "team_id": 8, "salary": 10000, "starting_position": null}}, {"model": "nascar.driver", "pk": 34, "fields": {"date_created": "2024-02-22T22:56:09.776Z", "user": 1, "date_updated": "2024-02-27T21:04:28.097Z", "name": "Austin Hill", "car_no": 62, "sponsor": "Dent Wizard", "make": "Chevrolet", "team": null, "team_id": 16, "salary": 3000, "starting_position": null}}, {"model": "nascar.driver", "pk": 35, "fields": {"date_created": "2024-02-22T22:56:09.781Z", "user": 1, "date_updated": "2024-02-27T21:03:52.914Z", "name": "Travis Pastrana", "car_no": 67, "sponsor": null, "make": null, "team": null, "team_id": 16, "salary": 3000, "starting_position": null}}, {"model": "nascar.driver", "pk": 36, "fields": {"date_created": "2024-02-22T22:56:09.785Z", "user": 1, "date_updated": "2024-02-27T20:39:38.497Z", "name": "Corey LaJoie", "car_no": 7, "sponsor": "Built Bar", "make": "Chevrolet", "team": "Spire Motorsports", "team_id": 5, "salary": 8000, "starting_position": null}}, {"model": "nascar.driver", "pk": 37, "fields": {"date_created": "2024-02-22T22:56:09.792Z", "user": 1, "date_updated": "2024-02-27T21:00:51.568Z", "name": "Ty Dillon", "car_no": 77, "sponsor": "Smithfield", "make": "Chevrolet", "team": "Spire Motorsports", "team_id": 16, "salary": 6000, "starting_position": null}}, {"model": "nascar.driver", "pk": 38, "fields": {"date_created": "2024-02-22T22:56:09.798Z", "user": 1, "date_updated": "2024-02-27T21:01:37.141Z", "name": "B.J. McLeod", "car_no": 78, "sponsor": "Power Slap Rumble", "make": "Ford", "team": "Live Fast Motorsports", "team_id": 17, "salary": 4000, "starting_position": null}}, {"model": "nascar.driver", "pk": 39, "fields": {"date_created": "2024-02-22T22:56:09.802Z", "user": 1, "date_updated": "2024-02-27T20:38:43.342Z", "name": "Kyle Busch", "car_no": 8, "sponsor": "Netspend", "make": "Chevrolet", "team": "Richard Childress Racing", "team_id": 4, "salary": 12000, "starting_position": null}}, {"model": "nascar.driver", "pk": 40, "fields": {"date_created": "2024-02-22T22:56:09.809Z", "user": 1, "date_updated": "2024-02-27T20:35:07.387Z", "name": "Chase Elliott", "car_no": 9, "sponsor": "NAPA Auto Parts", "make": "Chevrolet", "team": "Hendrick Motorsports", "team_id": 1, "salary": 8000, "starting_position": null}}, {"model": "nascar.driver", "pk": 41, "fields": {"date_created": "2024-02-22T22:56:09.813Z", "user": 1, "date_updated": "2024-02-27T20:59:33.829Z", "name": "Jimmie Johnson", "car_no": 84, "sponsor": "Carvana", "make": "Chevrolet", "team": "Legacy Motor Club", "team_id": 15, "salary": 3000, "starting_position": null}}, {"model": "nascar.driver", "pk": 42, "fields": {"date_created": "2024-02-22T22:56:09.818Z", "user": 1, "date_updated": "2024-02-27T20:50:36.334Z", "name": "Josh Berry", "car_no": 9, "sponsor": "NAPA Auto Parts", "make": "Chevrolet", "team": "Hendrick Motorsports", "team_id": 10, "salary": 3000, "starting_position": null}}, {"model": "nascar.driver", "pk": 43, "fields": {"date_created": "2024-02-22T22:56:09.824Z", "user": 1, "date_updated": "2024-02-27T20:42:37.816Z", "name": "Daniel Suarez", "car_no": 99, "sponsor": "3CHI", "make": "Chevrolet", "team": "TRACKHOUSE RACING TEAM", "team_id": 6, "salary": 10000, "starting_position": null}}, {"model": "nascar.driver", "pk": 44, "fields": {"date_created": "2024-02-23T18:32:53.869Z", "user": 1, "date_updated": "2024-02-27T21:03:14.046Z", "name": "N/A", "car_no": null, "sponsor": null, "make": null, "team": null, "team_id": 16, "salary": null, "starting_position": null}}, {"model": "nascar.driver", "pk": 45, "fields": {"date_created": "2024-02-27T20:37:01.946Z", "user": 1, "date_updated": "2024-02-27T20:37:01.946Z", "name": "Daniel Hemric", "car_no": 31, "sponsor": null, "make": null, "team": null, "team_id": 3, "salary": null, "starting_position": null}}, {"model": "nascar.driver", "pk": 46, "fields": {"date_created": "2024-02-27T20:41:26.301Z", "user": 1, "date_updated": "2024-02-27T20:41:26.301Z", "name": "Carson Hocevar", "car_no": 77, "sponsor": null, "make": "Chevrolet", "team": null, "team_id": 5, "salary": null, "starting_position": null}}, {"model": "nascar.driver", "pk": 47, "fields": {"date_created": "2024-02-27T20:49:22.146Z", "user": 1, "date_updated": "2024-02-27T20:49:22.146Z", "name": "Kaz Grala", "car_no": 36, "sponsor": null, "make": "Ford Mustang", "team": null, "team_id": 9, "salary": null, "starting_position": null}}, {"model": "nascar.driver", "pk": 48, "fields": {"date_created": "2024-02-27T20:59:07.093Z", "user": 1, "date_updated": "2024-02-27T20:59:07.093Z", "name": "John Hunter Nemechek", "car_no": 42, "sponsor": null, "make": "Toyota", "team": null, "team_id": 15, "salary": null, "starting_position": null}}]
+[
+  {
+    "model": "nascar.driver",
+    "pk": 1,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.617Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:42:16.650Z",
+      "name": "Ross Chastain",
+      "car_no": 1,
+      "sponsor": "AdventHealth",
+      "make": "Chevrolet",
+      "team_id": 6,
+      "salary": 12000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 2,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.622Z",
+      "user": 1,
+      "date_updated": "2024-02-27T21:04:46.517Z",
+      "name": "Aric Almirola",
+      "car_no": 10,
+      "sponsor": "Smithfield",
+      "make": "Ford",
+      "team_id": 16,
+      "salary": 8000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 3,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.629Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:57:16.388Z",
+      "name": "Denny Hamlin",
+      "car_no": 11,
+      "sponsor": "FedEx",
+      "make": "Toyota",
+      "team_id": 14,
+      "salary": 11000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 4,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.636Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:53:07.838Z",
+      "name": "Ryan Blaney",
+      "car_no": 12,
+      "sponsor": "Menards",
+      "make": "Ford",
+      "team_id": 11,
+      "salary": 12000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 5,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.641Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:51:17.974Z",
+      "name": "Chase Briscoe",
+      "car_no": 14,
+      "sponsor": "Mahindra Tractors",
+      "make": "Ford",
+      "team_id": 10,
+      "salary": 10000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 6,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.645Z",
+      "user": 1,
+      "date_updated": "2024-02-27T21:04:10.877Z",
+      "name": "J.J. Yeley",
+      "car_no": 51,
+      "sponsor": "Nurtec",
+      "make": "Ford",
+      "team_id": 16,
+      "salary": 3000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 7,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.650Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:44:04.912Z",
+      "name": "Todd Gilliland",
+      "car_no": 36,
+      "sponsor": "Wellcare",
+      "make": "Ford",
+      "team_id": 7,
+      "salary": 8000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 8,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.655Z",
+      "user": 1,
+      "date_updated": "2024-02-27T21:03:37.673Z",
+      "name": "Riley Herbst",
+      "car_no": 15,
+      "sponsor": "Adrenaline Shoc",
+      "make": "Ford",
+      "team_id": 16,
+      "salary": 3000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 9,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.660Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:35:57.800Z",
+      "name": "AJ Allmendinger",
+      "car_no": 16,
+      "sponsor": "Adrenaline Shoc",
+      "make": "Chevrolet",
+      "team_id": 3,
+      "salary": 6000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 10,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.665Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:47:23.829Z",
+      "name": "Chris Buescher",
+      "car_no": 17,
+      "sponsor": "Fastenal",
+      "make": "Ford",
+      "team_id": 8,
+      "salary": 10000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 11,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.670Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:57:05.203Z",
+      "name": "Martin Truex Jr.",
+      "car_no": 19,
+      "sponsor": "Bass Pro Shops",
+      "make": "Toyota",
+      "team_id": 14,
+      "salary": 11000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 12,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.674Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:52:46.811Z",
+      "name": "Austin Cindric",
+      "car_no": 2,
+      "sponsor": "Discount Tire",
+      "make": "Ford",
+      "team_id": 11,
+      "salary": 9000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 13,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.679Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:56:51.274Z",
+      "name": "Christopher Bell",
+      "car_no": 20,
+      "sponsor": "Rheem",
+      "make": "Toyota",
+      "team_id": 14,
+      "salary": 12000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 14,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.683Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:54:35.691Z",
+      "name": "Harrison Burton",
+      "car_no": 21,
+      "sponsor": "Motorcraft",
+      "make": "Ford",
+      "team_id": 12,
+      "salary": 7000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 15,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.688Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:53:27.320Z",
+      "name": "Joey Logano",
+      "car_no": 22,
+      "sponsor": "Shell-Pennzoil",
+      "make": "Ford",
+      "team_id": 11,
+      "salary": 11000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 16,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.692Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:55:11.369Z",
+      "name": "Bubba Wallace",
+      "car_no": 23,
+      "sponsor": "McDonalds",
+      "make": "Toyota",
+      "team_id": 13,
+      "salary": 9000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 17,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.697Z",
+      "user": 1,
+      "date_updated": "2024-02-22T22:56:09.697Z",
+      "name": "William Byron",
+      "car_no": 24,
+      "sponsor": "Axalta",
+      "make": "Chevrolet",
+      "team_id": 1,
+      "salary": 11000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 18,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.702Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:38:02.679Z",
+      "name": "Austin Dillon",
+      "car_no": 3,
+      "sponsor": "Bass Pro Shops",
+      "make": "Chevrolet",
+      "team_id": 4,
+      "salary": 9000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 19,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.706Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:49:49.069Z",
+      "name": "Justin Haley",
+      "car_no": 31,
+      "sponsor": "LeafFilter Gutter Protection",
+      "make": "Chevrolet",
+      "team_id": 9,
+      "salary": 9000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 20,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.710Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:43:48.056Z",
+      "name": "Michael McDowell",
+      "car_no": 34,
+      "sponsor": "Love's Travel Stops",
+      "make": "Ford",
+      "team_id": 7,
+      "salary": 10000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 21,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.716Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:40:24.403Z",
+      "name": "Zane Smith",
+      "car_no": 71,
+      "sponsor": null,
+      "make": null,
+      "team_id": 5,
+      "salary": 3000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 22,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.720Z",
+      "user": 1,
+      "date_updated": "2024-02-27T21:04:54.553Z",
+      "name": "Kevin Harvick",
+      "car_no": 4,
+      "sponsor": "GEARWRENCH",
+      "make": "Ford",
+      "team_id": 16,
+      "salary": 11000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 23,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.725Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:51:33.377Z",
+      "name": "Ryan Preece",
+      "car_no": 41,
+      "sponsor": "Haas Automation",
+      "make": "Ford",
+      "team_id": 10,
+      "salary": 3000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 24,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.729Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:51:02.989Z",
+      "name": "Noah Gragson",
+      "car_no": 42,
+      "sponsor": "Black Rifle Coffee",
+      "make": "Chevrolet",
+      "team_id": 10,
+      "salary": 5000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 25,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.734Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:58:19.268Z",
+      "name": "Erik Jones",
+      "car_no": 43,
+      "sponsor": "Focus Factor",
+      "make": "Chevrolet",
+      "team_id": 15,
+      "salary": 9000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 26,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.738Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:55:24.140Z",
+      "name": "Tyler Reddick",
+      "car_no": 45,
+      "sponsor": "Monster Energy",
+      "make": "Toyota",
+      "team_id": 13,
+      "salary": 11000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 27,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.744Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:35:38.504Z",
+      "name": "Ricky Stenhouse Jr.",
+      "car_no": 47,
+      "sponsor": "Kroger",
+      "make": "Chevrolet",
+      "team_id": 2,
+      "salary": 10000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 28,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.749Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:33:27.902Z",
+      "name": "Alex Bowman",
+      "car_no": 48,
+      "sponsor": "Ally",
+      "make": "Chevrolet",
+      "team_id": 1,
+      "salary": 11000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 29,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.753Z",
+      "user": 1,
+      "date_updated": "2024-02-22T22:56:09.753Z",
+      "name": "Kyle Larson",
+      "car_no": 5,
+      "sponsor": "HendrickCars.com",
+      "make": "Chevrolet",
+      "team_id": 1,
+      "salary": 11000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 30,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.759Z",
+      "user": 1,
+      "date_updated": "2024-02-27T21:02:58.239Z",
+      "name": "Conor Daly",
+      "car_no": 50,
+      "sponsor": "Dent Wizard",
+      "make": "Chevrolet",
+      "team_id": 16,
+      "salary": 3000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 31,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.763Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:48:22.485Z",
+      "name": "Cody Ware",
+      "car_no": 51,
+      "sponsor": "Nurtec",
+      "make": "Ford",
+      "team_id": 9,
+      "salary": 5000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 32,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.767Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:57:33.370Z",
+      "name": "Ty Gibbs",
+      "car_no": 54,
+      "sponsor": "Monster Energy",
+      "make": "Toyota",
+      "team_id": 14,
+      "salary": 6000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 33,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.771Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:47:07.261Z",
+      "name": "Brad Keselowski",
+      "car_no": 6,
+      "sponsor": "Kohler Power Reserve",
+      "make": "Ford",
+      "team_id": 8,
+      "salary": 10000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 34,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.776Z",
+      "user": 1,
+      "date_updated": "2024-02-27T21:04:28.097Z",
+      "name": "Austin Hill",
+      "car_no": 62,
+      "sponsor": "Dent Wizard",
+      "make": "Chevrolet",
+      "team_id": 16,
+      "salary": 3000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 35,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.781Z",
+      "user": 1,
+      "date_updated": "2024-02-27T21:03:52.914Z",
+      "name": "Travis Pastrana",
+      "car_no": 67,
+      "sponsor": null,
+      "make": null,
+      "team_id": 16,
+      "salary": 3000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 36,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.785Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:39:38.497Z",
+      "name": "Corey LaJoie",
+      "car_no": 7,
+      "sponsor": "Built Bar",
+      "make": "Chevrolet",
+      "team_id": 5,
+      "salary": 8000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 37,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.792Z",
+      "user": 1,
+      "date_updated": "2024-02-27T21:00:51.568Z",
+      "name": "Ty Dillon",
+      "car_no": 77,
+      "sponsor": "Smithfield",
+      "make": "Chevrolet",
+      "team_id": 16,
+      "salary": 6000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 38,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.798Z",
+      "user": 1,
+      "date_updated": "2024-02-27T21:01:37.141Z",
+      "name": "B.J. McLeod",
+      "car_no": 78,
+      "sponsor": "Power Slap Rumble",
+      "make": "Ford",
+      "team_id": 17,
+      "salary": 4000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 39,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.802Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:38:43.342Z",
+      "name": "Kyle Busch",
+      "car_no": 8,
+      "sponsor": "Netspend",
+      "make": "Chevrolet",
+      "team_id": 4,
+      "salary": 12000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 40,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.809Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:35:07.387Z",
+      "name": "Chase Elliott",
+      "car_no": 9,
+      "sponsor": "NAPA Auto Parts",
+      "make": "Chevrolet",
+      "team_id": 1,
+      "salary": 8000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 41,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.813Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:59:33.829Z",
+      "name": "Jimmie Johnson",
+      "car_no": 84,
+      "sponsor": "Carvana",
+      "make": "Chevrolet",
+      "team_id": 15,
+      "salary": 3000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 42,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.818Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:50:36.334Z",
+      "name": "Josh Berry",
+      "car_no": 9,
+      "sponsor": "NAPA Auto Parts",
+      "make": "Chevrolet",
+      "team_id": 10,
+      "salary": 3000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 43,
+    "fields": {
+      "date_created": "2024-02-22T22:56:09.824Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:42:37.816Z",
+      "name": "Daniel Suarez",
+      "car_no": 99,
+      "sponsor": "3CHI",
+      "make": "Chevrolet",
+      "team_id": 6,
+      "salary": 10000,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 44,
+    "fields": {
+      "date_created": "2024-02-23T18:32:53.869Z",
+      "user": 1,
+      "date_updated": "2024-02-27T21:03:14.046Z",
+      "name": "N/A",
+      "car_no": null,
+      "sponsor": null,
+      "make": null,
+      "team_id": 16,
+      "salary": null,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 45,
+    "fields": {
+      "date_created": "2024-02-27T20:37:01.946Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:37:01.946Z",
+      "name": "Daniel Hemric",
+      "car_no": 31,
+      "sponsor": null,
+      "make": null,
+      "team_id": 3,
+      "salary": null,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 46,
+    "fields": {
+      "date_created": "2024-02-27T20:41:26.301Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:41:26.301Z",
+      "name": "Carson Hocevar",
+      "car_no": 77,
+      "sponsor": null,
+      "make": "Chevrolet",
+      "team_id": 5,
+      "salary": null,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 47,
+    "fields": {
+      "date_created": "2024-02-27T20:49:22.146Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:49:22.146Z",
+      "name": "Kaz Grala",
+      "car_no": 36,
+      "sponsor": null,
+      "make": "Ford Mustang",
+      "team_id": 9,
+      "salary": null,
+      "starting_position": null
+    }
+  },
+  {
+    "model": "nascar.driver",
+    "pk": 48,
+    "fields": {
+      "date_created": "2024-02-27T20:59:07.093Z",
+      "user": 1,
+      "date_updated": "2024-02-27T20:59:07.093Z",
+      "name": "John Hunter Nemechek",
+      "car_no": 42,
+      "sponsor": null,
+      "make": "Toyota",
+      "team_id": 15,
+      "salary": null,
+      "starting_position": null
+    }
+  }
+]

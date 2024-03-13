@@ -1,12 +1,23 @@
 from django.contrib import admin
-from nascar.models import Bet, Driver, Manufacturer, Player, Race, Results, Team, Track
+from nascar.models import (
+    Bet,
+    Bets,
+    Driver,
+    Manufacturer,
+    Player,
+    Race,
+    RaceBet,
+    Results,
+    Team,
+    Track,
+)
 
 # Register your models here.
 
 
 @admin.register(Driver)
 class DriverAdmin(admin.ModelAdmin):
-    list_filter = ["team_fk"]
+    list_filter = ["team"]
     list_display = ("name", "car_no")
     ordering = ["name"]
 
@@ -50,6 +61,16 @@ class TeamAdmin(admin.ModelAdmin):
         return f"{instance.manufacturer.manufacturer_name}"
 
 
+@admin.register(RaceBet)
+class RaceBetAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(Bets)
+class BetsAdmin(admin.ModelAdmin):
+    pass
+
+
 @admin.register(Bet)
 class BetAdmin(admin.ModelAdmin):
     list_display = (
@@ -61,8 +82,8 @@ class BetAdmin(admin.ModelAdmin):
         "first_pick",
     )
     ordering = [
-        "race_fk__race_date",
-        "player_fk__player_name",
+        "race__race_date",
+        "player__player_name",
     ]
 
     # def race_race_date(self, instance):
@@ -71,22 +92,22 @@ class BetAdmin(admin.ModelAdmin):
     # # TODO: add race date ordering
 
     def race_date(self, instance):
-        return f"{instance.race_fk.race_date} / {instance.race_fk.track_fk}"
+        return f"{instance.race.race_date} / {instance.race.track}"
 
     def track_name(self, instance):
-        return instance.race_fk.track_fk
+        return instance.race.track
 
     def driver(self, instance):
-        return instance.driver_fk.name
+        return instance.driver.name
 
     def player_name(self, instance):
-        return f"{instance.player_fk.player_name}"
+        return f"{instance.player.player_name}"
 
 
 @admin.register(Race)
 class RaceAdmin(admin.ModelAdmin):
     # date_hierarchy = "race_date"
-    # list_filter = ["track_fk__track_name"]
+    list_filter = ["track"]
     list_display = (
         "race_date",
         # "track_fk_track_name",
