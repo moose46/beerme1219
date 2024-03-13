@@ -29,7 +29,11 @@ class Base(models.Model):
 class RaceBet(Base):
     id = models.AutoField(db_column="id", primary_key=True)
     race = models.ForeignKey(
-        "Race", models.DO_NOTHING, db_column="RACE_ID", blank=True, null=True
+        "Race",
+        models.DO_NOTHING,
+        db_column="race_id",
+        blank=True,
+        null=True,
     )  # Field name made lowercase.
     bets = models.ForeignKey(
         "Bets",
@@ -43,12 +47,12 @@ class RaceBet(Base):
 class Bets(Base):
     id = models.AutoField(db_column="id", primary_key=True)
     player = models.ForeignKey(
-        "Player", models.DO_NOTHING, db_column="PLAYER_ID", blank=True, null=True
+        "Player", models.DO_NOTHING, db_column="player_id", blank=True, null=True
     )
     driver = models.ForeignKey(
         "Driver",
         models.DO_NOTHING,
-        db_column="DRIVER_ID",
+        db_column="driver_id",
         blank=True,
         null=True,
     )  # Field name made lowercase.
@@ -57,10 +61,10 @@ class Bets(Base):
 
 class Bet(Base):
     player = models.ForeignKey(
-        "Player", models.DO_NOTHING, db_column="PLAYER_ID", blank=True, null=True
+        "Player", models.DO_NOTHING, db_column="player_id", blank=True, null=True
     )  # Field name made lowercase.
     race = models.ForeignKey(
-        "Race", models.DO_NOTHING, db_column="RACE_ID", blank=True, null=True
+        "Race", models.DO_NOTHING, db_column="race_id", blank=True, null=True
     )  # Field name made lowercase.
     # track = models.ForeignKey(
     #     "Track", models.DO_NOTHING, db_column="TRACK_ID", blank=True, null=True
@@ -68,12 +72,12 @@ class Bet(Base):
     driver = models.ForeignKey(
         "Driver",
         models.DO_NOTHING,
-        db_column="DRIVER_ID",
+        db_column="driver_id",
         blank=True,
         null=True,
     )  # Field name made lowercase.
     bet_id = models.AutoField(
-        db_column="BET_ID", primary_key=True
+        db_column="bet_id", primary_key=True
     )  # Field name made lowercase.
     finish = models.IntegerField(null=False, default=0, db_column="Race Finish")
     first_pick = models.BooleanField(default=False, null=False)
@@ -98,10 +102,10 @@ class Bet(Base):
 
 class Player(Base):
     player_id = models.AutoField(
-        db_column="PLAYER_ID", primary_key=True
+        db_column="player_id", primary_key=True
     )  # Field name made lowercase.
     player_name = models.CharField(
-        db_column="PLAYER_NAME", max_length=32
+        db_column="player_name", max_length=32
     )  # Field name made lowercase.
 
     def __str__(self) -> str:
@@ -114,12 +118,12 @@ class Player(Base):
 
 class Race(Base):
     race_id = models.AutoField(
-        db_column="RACE_ID", primary_key=True
+        db_column="race_id", primary_key=True
     )  # Field name made lowercase.
     race_name = models.CharField(
-        db_column="RACE_NAME", max_length=64
+        db_column="race_name", max_length=64
     )  # Field name made lowercase.
-    race_date = models.DateField(db_column="RACE_DATE")  # Field name made lowercase.
+    race_date = models.DateField(db_column="race_date")  # Field name made lowercase.
     race_time = models.TimeField(
         db_column="Race Time",
         blank=True,
@@ -129,7 +133,7 @@ class Race(Base):
     track = models.ForeignKey(
         "Track",
         models.DO_NOTHING,
-        db_column="TRACK_ID",
+        db_column="track_id",
     )  # Field name made lowercase.
     tv_radio = models.CharField(
         db_column="TV/RADIO", max_length=64, default="Fox/PRN"
@@ -153,7 +157,7 @@ class Track(Base):
     """
 
     track_id = models.AutoField(
-        db_column="ID", primary_key=True
+        db_column="id", primary_key=True
     )  # Field name made lowercase.
 
     track_name = models.CharField(max_length=64, default="N/A", null=False)
@@ -193,7 +197,7 @@ class Manufacturer(Base):
 
 
 class Team(Base):
-    team_id = models.AutoField(db_column="TEAM_ID", primary_key=True)
+    id = models.AutoField(db_column="id", primary_key=True)
     team_name = models.CharField(
         db_column="TEAM_NAME", unique=True, max_length=64, blank=False, null=False
     )
@@ -220,28 +224,28 @@ class Driver(Base):
         db_column="driver_id", primary_key=True
     )  # Field name made lowercase.
     name = models.CharField(
-        db_column="NAME", unique=True, max_length=32
+        db_column="name", unique=True, max_length=32
     )  # Field name made lowercase.
     car_no = models.IntegerField(
-        db_column="CAR_NO", blank=True, null=True
+        db_column="car_no", blank=True, null=True
     )  # Field name made lowercase.
     sponsor = models.CharField(
-        db_column="SPONSOR", max_length=64, blank=True, null=True
+        db_column="sponsor", max_length=64, blank=True, null=True
     )  # Field name made lowercase.
     make = models.CharField(
-        db_column="MAKE", max_length=32, blank=True, null=True
+        db_column="make", max_length=32, blank=True, null=True
     )  # Field name made lowercase.
     # team = models.CharField(
     #     db_column="TEAM", max_length=64, blank=True, null=True
     # )  # Field name made lowercase.
     team = models.ForeignKey(
-        Team, on_delete=models.CASCADE, db_column="TEAM_ID", null=True
+        Team, on_delete=models.CASCADE, db_column="team_id", null=True
     )
     salary = models.IntegerField(
-        db_column="SALARY", blank=True, null=True
+        db_column="salary", blank=True, null=True
     )  # Field name made lowercase.
     starting_position = models.IntegerField(
-        db_column="STARTING_POSITION", blank=True, null=True
+        db_column="starting_position", blank=True, null=True
     )  # Field name made lowercase.
 
     def __unicode__(self):
@@ -259,20 +263,20 @@ class Driver(Base):
 
 class Results(Base):
     driver = models.ForeignKey(
-        Driver, models.DO_NOTHING, db_column="DRIVER_ID", blank=True, null=True
+        Driver, models.DO_NOTHING, db_column="driver_id", blank=True, null=True
     )  # Field name made lowercase.
     race = models.ForeignKey(
-        Race, models.DO_NOTHING, db_column="RACE_ID", blank=True, null=True
+        Race, models.DO_NOTHING, db_column="race_id", blank=True, null=True
     )  # Field name made lowercase.
     results_id = models.AutoField(
-        db_column="RESULTS_ID", primary_key=True
+        db_column="id", primary_key=True
     )  # Field name made lowercase.
-    position = models.IntegerField(db_column="POSITION")  # Field name made lowercase.
-    car = models.IntegerField(db_column="CAR")  # Field name made lowercase.
+    position = models.IntegerField(db_column="position")  # Field name made lowercase.
+    car = models.IntegerField(db_column="car")  # Field name made lowercase.
     manufacturer = models.CharField(
-        db_column="MANUFACTURER", max_length=64
+        db_column="manufacturer", max_length=64
     )  # Field name made lowercase.
-    start = models.IntegerField(db_column="START")  # Field name made lowercase.
+    start = models.IntegerField(db_column="start")  # Field name made lowercase.
 
     class Meta:
         # managed = False
