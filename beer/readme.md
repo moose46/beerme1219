@@ -1,4 +1,3 @@
-
 # To Init Database
 
     delete all numbered migration files in the migrations directory
@@ -19,3 +18,13 @@
     python manage.py runserver 8081
 
 ## To view the data in a browser: [Admin](http://127.0.0.1:8081/admin)
+
+## To see which env is activated
+
+```
+which python
+```
+
+## Django forms
+
+https://www.geeksforgeeks.org/django-forms/

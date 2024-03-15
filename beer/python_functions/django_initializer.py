@@ -12,7 +12,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Therefore you'll be able to import analysis.models etc
 sys.path.insert(0, BASE_DIR)
 # The DJANGO_SETTINGS_MODULE has to be set to allow us to access django imports
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "arcwebsite.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "beer.settings")
 
 # This is for setting up django
 django.setup()
