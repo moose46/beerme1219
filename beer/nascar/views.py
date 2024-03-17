@@ -4,7 +4,7 @@ from django.http import HttpResponse
 from django.shortcuts import redirect, render
 from django.template import loader
 
-from .forms import BetForm
+from .forms import BetForm, RaceForm
 from .models import Driver, Race, Track
 
 
@@ -19,6 +19,15 @@ def tracks(request):
     list_of_tracks = Track.objects.order_by("track_name")
     context = {"list_of_tracks": list_of_tracks}
     return render(request, "nascar/tracks.html", context=context)
+
+
+def race(request):
+    form = RaceForm()
+    races = Race.objects.all()
+    context = {"races": races}
+    context = {"title": "2024 Nascar Races"}
+    context = {"form": form}
+    return render(request, "race.html", context=context)
 
 
 # http://localhost:8081/nascar/races

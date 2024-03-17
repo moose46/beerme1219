@@ -7,6 +7,12 @@ from .models import Driver, Player, Race
 # env > mysite > main > views.py
 
 
+class RaceForm(forms.Form):
+    class Meta:
+        model = Race
+        fields = ["race_name", "race_date", "track"]
+
+
 # https://docs.djangoproject.com/en/5.0/ref/models/expressions/
 # http://127.0.0.1:8081/nascar/bets/
 class BetForm(forms.Form):

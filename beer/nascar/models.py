@@ -17,7 +17,8 @@ from zmq import NULL
 
 
 class Base(models.Model):
-    now = timezone.datetime
+    # now = timezone.datetime
+    # primary key on all models inherited from the Base
     id = models.AutoField(db_column="id", primary_key=True)
     date_created = models.DateTimeField("date created", auto_now_add=True, null=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -145,6 +146,7 @@ class Track(Base):
     Args:
         Base (_type_): _description_
     """
+
     track_name = models.CharField(max_length=64, default="N/A", null=False)
     owner = models.CharField(max_length=64, default="N/A")
     track_length = models.FloatField(default=0.0, null=False)
