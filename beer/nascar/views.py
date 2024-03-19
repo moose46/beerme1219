@@ -22,12 +22,16 @@ def tracks(request):
 
 
 def race(request):
+    # Create an empty form
+    print(f"Create an empty form!")
     form = RaceForm()
+    print(f"Form created!")
     races = Race.objects.all()
+    print(f"Found {races.count()} races!")
     context = {"races": races}
     context = {"title": "2024 Nascar Races"}
     context = {"form": form}
-    return render(request, "race.html", context=context)
+    return render(request, "nascar/race.html", context=context)
 
 
 # http://localhost:8081/nascar/races

@@ -7,10 +7,11 @@ from .models import Driver, Player, Race
 # env > mysite > main > views.py
 
 
-class RaceForm(forms.Form):
+# https://www.techwithtim.net/tutorials/django/html-templates
+class RaceForm(forms.ModelForm):
     class Meta:
         model = Race
-        fields = ["race_name", "race_date", "track"]
+        fields = ["race_name", "race_date"]
 
 
 # https://docs.djangoproject.com/en/5.0/ref/models/expressions/

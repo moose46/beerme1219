@@ -1,0 +1,10 @@
+{% extends 'nascar/base.html' %}
+{% block content %}
+  <h1>Hello from Race</h1>
+  {% comment %} {{ form }} {% endcomment %}
+  {% if races %}
+    {% for race in races %}
+      <li>{{ race.race_name }} .</li>
+    {% endfor %}
+  {% endif %}
+{% endblock %}

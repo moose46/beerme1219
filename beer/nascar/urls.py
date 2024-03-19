@@ -8,4 +8,6 @@ urlpatterns = [
     path("races/", views.races, name="races"),
     path("drivers/", views.drivers, name="drivers"),
     path("bets/", views.bets, name="bets"),
+    path("index/", views.index, name="index"),
+    path("race/", views.race, name="race"),
 ]
