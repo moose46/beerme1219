@@ -1,10 +1,12 @@
 # from django import template
 
+
 from django.http import HttpResponse
 from django.shortcuts import redirect, render
 from django.template import loader
+from matplotlib import widgets
 
-from .forms import BetForm, RaceForm
+from .forms import BetForm, RaceIndexForm
 from .models import Driver, Race, Track
 
 
@@ -21,17 +23,27 @@ def tracks(request):
     return render(request, "nascar/tracks.html", context=context)
 
 
-def race(request):
+def race_index(request):
     # Create an empty form
-    print(f"Create an empty form!")
-    form = RaceForm()
-    print(f"Form created!")
-    races = Race.objects.all()
-    print(f"Found {races.count()} races!")
-    context = {"races": races}
-    context = {"title": "2024 Nascar Races"}
-    context = {"form": form}
-    return render(request, "nascar/race.html", context=context)
+    # print("Create an empty form!")
+    # form = RaceIndexForm()
+    # print("Form created!")
+    # get all races and order them by the race date
+    races = Race.objects.all().order_by("race_date")
+    # print(f"Found {races.count()} races!")
+    context = {
+        "races": races,
+        "the_title": "2024 Nascar Races!",
+        # "form": form,
+    }
+    # print(context.items())
+    return render(request, "nascar/race/index.html", context=context)
+
+
+def race_create(request):
+    form = RaceIndexForm()
+    context = {"form": form, "the_title": "Add Race"}
+    return render(request, "nascar/race/create.html", context=context)
 
 
 # http://localhost:8081/nascar/races

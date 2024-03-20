@@ -1,0 +1,10 @@
+{% extends 'nascar/base.html' %}
+{% load crispy_forms_tags %}
+{% block title %}
+  {{ the_title }}
+{% endblock %}
+{% block content %}
+  <h1>{{ the_title }} {{ bob }}</h1>
+  {{ form.as_p }}
+  <input type="submit" value="Submit" />
+{% endblock %}

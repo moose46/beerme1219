@@ -1,0 +1,25 @@
+{% extends 'nascar/base.html' %}
+{% load crispy_forms_tags %}
+{% block title %}
+  {{ the_title }} Boo!
+{% endblock %}
+{% block content %}
+  <h1>{{ the_title }} {{ bob }}</h1>
+  {% comment %} {{ form }} {% endcomment %}
+  {% if races %}
+    <table>
+      <th align="left">Date</th>
+      <th align="left">Race</th>
+      <th align="left">Track</th>
+      {% for race in races %}
+        <tr>
+          <td>{{ race.race_date }}</td>
+          <td>{{ race.race_name }}</td>
+          <td>{{ race.track }}</td>
+        </tr>
+      {% endfor %}
+    </table>
+  {% endif %}
+  {{ form.as_p }}
+  <input type="submit" value="Add Race" />
+{% endblock %}

@@ -1,5 +1,6 @@
 from django import forms
 from django.db.models.lookups import GreaterThan
+from django.forms import DateInput
 
 from .models import Driver, Player, Race
 
@@ -8,10 +9,13 @@ from .models import Driver, Player, Race
 
 
 # https://www.techwithtim.net/tutorials/django/html-templates
-class RaceForm(forms.ModelForm):
+class RaceIndexForm(forms.ModelForm):
+    race_date = forms.DateField(widget=forms.DateInput(attrs={"type": "date"}))
+    race_name = forms.CharField(max_length=64, required=True, help_text="empty")
+
     class Meta:
         model = Race
-        fields = ["race_name", "race_date"]
+        fields = ["race_name", "track"]
 
 
 # https://docs.djangoproject.com/en/5.0/ref/models/expressions/
