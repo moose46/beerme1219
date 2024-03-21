@@ -56,7 +56,9 @@ class Bets(Base):
         blank=True,
         null=True,
     )  # Field name made lowercase.
-    finish = models.IntegerField(null=False, default=0, db_column="finish")
+    finish_position = models.IntegerField(
+        null=False, default=0, db_column="finish_position"
+    )
 
 
 class Bet(Base):
@@ -76,13 +78,13 @@ class Bet(Base):
         blank=True,
         null=True,
     )  # Field name made lowercase.
-    finish = models.IntegerField(null=False, default=0, db_column="Race Finish")
+    finish_position = models.IntegerField(
+        null=False, default=0, db_column="finish_position"
+    )
     first_pick = models.BooleanField(default=False, null=False)
 
     def __str__(self) -> str:
-        return (
-            f"{self.player} {self.race} {self.driver} {self.finish} {self.first_pick}"
-        )
+        return f"{self.player} {self.race} {self.driver} {self.finish_position} {self.first_pick}"
 
     class Meta:
         # managed = False
@@ -116,10 +118,11 @@ class Race(Base):
     )  # Field name made lowercase.
     race_date = models.DateField(db_column="race_date")  # Field name made lowercase.
     race_time = models.TimeField(
-        db_column="Race Time",
+        db_column="race_time",
         blank=True,
         null=True,
         # default=datetime.datetime.now().time(),
+        auto_now_add=True,
     )
     track = models.ForeignKey(
         "Track",
@@ -127,7 +130,7 @@ class Race(Base):
         db_column="track_id",
     )  # Field name made lowercase.
     tv_radio = models.CharField(
-        db_column="TV/RADIO", max_length=64, default="Fox/PRN"
+        db_column="tv_radio", max_length=64, default="Fox/PRN"
     )  # Field name made lowercase.
 
     def __str__(self) -> str:
@@ -164,7 +167,7 @@ class Track(Base):
 
 class Manufacturer(Base):
     manufacturer_name = models.CharField(
-        db_column="MANUFACTURER_NAME",
+        db_column="manufacturer_name",
         unique=True,
         max_length=64,
         blank=False,
@@ -182,7 +185,7 @@ class Manufacturer(Base):
 
 class Team(Base):
     team_name = models.CharField(
-        db_column="TEAM_NAME", unique=True, max_length=64, blank=False, null=False
+        db_column="team_name", unique=True, max_length=64, blank=False, null=False
     )
     manufacturer = models.ForeignKey(
         "Manufacturer",
@@ -201,7 +204,7 @@ class Team(Base):
 
 class Driver(Base):
     name = models.CharField(
-        db_column="name", unique=True, max_length=32
+        db_column="driver_name", unique=True, max_length=32
     )  # Field name made lowercase.
     car_no = models.IntegerField(
         db_column="car_no", blank=True, null=True
@@ -209,8 +212,8 @@ class Driver(Base):
     sponsor = models.CharField(
         db_column="sponsor", max_length=64, blank=True, null=True
     )  # Field name made lowercase.
-    make = models.CharField(
-        db_column="make", max_length=32, blank=True, null=True
+    manufacturer_name = models.CharField(
+        db_column="manufacturer_name", max_length=32, blank=True, null=True
     )  # Field name made lowercase.
     # team = models.CharField(
     #     db_column="TEAM", max_length=64, blank=True, null=True
@@ -245,10 +248,12 @@ class Results(Base):
     race = models.ForeignKey(
         Race, models.DO_NOTHING, db_column="race_id", blank=True, null=True
     )  # Field name made lowercase.
-    position = models.IntegerField(db_column="position")  # Field name made lowercase.
-    car = models.IntegerField(db_column="car")  # Field name made lowercase.
-    manufacturer = models.CharField(
-        db_column="manufacturer", max_length=64
+    finish_position = models.IntegerField(
+        db_column="finish_position", default=0
+    )  # Field name made lowercase.
+    car_no = models.IntegerField(db_column="car_no")  # Field name made lowercase.
+    manufacturer_name = models.CharField(
+        db_column="manufacturer_name", max_length=64
     )  # Field name made lowercase.
     start = models.IntegerField(db_column="start")  # Field name made lowercase.
 

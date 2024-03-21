@@ -48,7 +48,7 @@ def run():
             d.name = row.NAME
             d.car_no = row.NO
             d.sponsor = row.SPONSOR
-            d.make = row.MAKE
+            d.manufacturer_name = row.MAKE
             # d.team = row.TEAM
             d.salary = row.SALARY
             d.user = user

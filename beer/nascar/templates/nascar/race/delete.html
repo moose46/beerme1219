@@ -7,7 +7,9 @@
   <h3>debug: {{ debug_info }}</h3>
   <form method="post" action="">
     {% csrf_token %}
-    {{ form.as_p }}
-    <input class="btn btn-primary" type="submit" value="Create" />
+    {% for race in races %}
+      <li>{{ race.race_name }}</li>
+    {% endfor %}
+    <input class="btn btn-primary" type="submit" value="Delete" />
   </form>
 {% endblock %}

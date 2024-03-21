@@ -36,7 +36,7 @@ class ResultsAdmin(admin.ModelAdmin):
     list_display = (
         "race",
         "driver",
-        "car",
+        "car_no",
     )
     # autocomplete_fields = ["driver"]
 
@@ -78,7 +78,7 @@ class BetAdmin(admin.ModelAdmin):
         "driver",
         "race_date",
         "track_name",
-        "finish",
+        "finish_position",
         "first_pick",
     )
     ordering = [

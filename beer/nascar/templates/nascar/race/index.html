@@ -4,22 +4,33 @@
   {{ the_title }} Boo!
 {% endblock %}
 {% block content %}
-  <h1>{{ the_title }} {{ bob }}</h1>
-  {% comment %} {{ form }} {% endcomment %}
-  {% if races %}
-    <table>
-      <th align="left">Date</th>
-      <th align="left">Race</th>
-      <th align="left">Track</th>
-      {% for race in races %}
-        <tr>
-          <td>{{ race.race_date }}</td>
-          <td>{{ race.race_name }}</td>
-          <td>{{ race.track }}</td>
-        </tr>
-      {% endfor %}
-    </table>
-  {% endif %}
-  {{ form.as_p }}
-  <input type="submit" value="Add Race" />
+  debug:<br />
+  {{ debug_info }}
+  <form method="post" action="">
+    {% csrf_token %}
+    {% comment %} {{ form }} {% endcomment %}
+    {% if races %}
+      <table>
+        <th align="left">Delete</th>
+        <th align="left">Date</th>
+        <th align="left">Race</th>
+        <th align="left">Track</th>
+        {% for race in races %}
+          <tr>
+            <td>
+              <input type="checkbox" id="{{ race.id }}" name="delete_checkbox" />
+            </td>
+            <td id="{{ race.pk }}">{{ race.race_date }}</td>
+            <td>{{ race.race_name }}</td>
+            <td>{{ race.track }}</td>
+          </tr>
+        {% endfor %}
+      </table>
+    {% endif %}
+    {% comment %} {{ form.as_p }} {% endcomment %}
+    <a class="btn btn-primary" href="create">Create Race</a>
+    <a class="btn btn-danger" href="delete">Delete Selected Races 1</a>
+
+    <input class="btn btn-danger" type="submit" value="Delete Selected Races 2" />
+  </form>
 {% endblock %}

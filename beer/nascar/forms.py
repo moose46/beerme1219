@@ -1,6 +1,7 @@
 from django import forms
 from django.db.models.lookups import GreaterThan
 from django.forms import DateInput
+from traitlets import default
 
 from .models import Driver, Player, Race
 
@@ -8,7 +9,18 @@ from .models import Driver, Player, Race
 # env > mysite > main > views.py
 
 
+class RaceDeleteForm(forms.ModelForm):
+    race_date = forms.DateField(widget=forms.DateInput(attrs={"type": "date"}))
+    race_name = forms.CharField(max_length=64, required=True, help_text="empty")
+    # delete_race = forms.CheckboxInput()
+
+    class Meta:
+        model = Race
+        fields = ["race_name", "track"]
+
+
 # https://www.techwithtim.net/tutorials/django/html-templates
+# https://www.techwithtim.net/tutorials/django/simple-forms
 class RaceIndexForm(forms.ModelForm):
     race_date = forms.DateField(widget=forms.DateInput(attrs={"type": "date"}))
     race_name = forms.CharField(max_length=64, required=True, help_text="empty")

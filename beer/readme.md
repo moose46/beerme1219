@@ -1,3 +1,8 @@
+```bash
+pip install django
+pip install django-extensions
+pip install django-crispy-forms
+'''
 # To Init Database
 
     delete all numbered migration files in the migrations directory
@@ -8,8 +13,10 @@
 
 # To load NASCAR drivers
 
+```bash
     cd to nascar/scripts
-    py ../../manage.py runscript load_drivers_from_csvhttps://books.agiliq.com/projects/django-orm-cookbook/en/latest/subquery.html
+    python ../../manage.py runscript load_drivers_from_csvhttps://books.agiliq.com/projects/django-orm-cookbook/en/latest/subquery.html
+```
 
 # To run server on port 8081
 
@@ -21,10 +28,14 @@
 
 ## To see which env is activated
 
-```
-which python
+```bash
+    which python
 ```
 
 ## Django forms
 
-https://www.geeksforgeeks.org/django-forms/
+<https://www.geeksforgeeks.org/django-forms/>
+
+## Python: Default Interperter Path
+
+.venv\Scripts\python
