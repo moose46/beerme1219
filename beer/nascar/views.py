@@ -1,12 +1,13 @@
+import re
 from urllib import response
 
 from django.contrib.auth.models import User
 from django.http import HttpResponse, HttpResponseRedirect
-from django.shortcuts import redirect, render
+from django.shortcuts import get_object_or_404, redirect, render
 from django.template import loader
 from matplotlib import widgets
 
-from .forms import BetForm, RaceDeleteForm, RaceIndexForm
+from .forms import BetForm, RaceDeleteForm, RaceForm, RaceIndexForm
 from .models import Driver, Race, Track
 
 
@@ -23,18 +24,30 @@ def tracks(request):
     return render(request, "nascar/tracks.html", context=context)
 
 
+# https://openclassrooms.com/en/courses/7107341-intermediate-django/7264795-include-multiple-forms-on-a-page
+def edit_race(request, race_id):
+    race = get_object_or_404(Race, id=race_id)
+    edit_form = RaceForm(instance=race)
+    delete_form = RaceDeleteForm()
+    print(f"in edit_race: {__name__}")
+    # if request == 'POST':
+    #     pass
+    context = {"edit_form": edit_form, "delete_form": delete_form}
+    return render(request, "nascar/edit_race.html", context=context)
+
+
 # path("race/", views.race_index, name="race_index"),
 # http://127.0.0.1:8081/nascar/race/
 def race_index(request):
     if request.method == "POST":
         data = request.POST
         print(f"race_index:POST {request}")
-        print(f"{data.get('race')}")
+        print(f"{data['submit']}")
         race_delete_form = RaceDeleteForm()
         races = Race.objects.all()
         return render(
             request,
-            "nascar/race/delete.html",
+            f"nascar/edit_race.html/{data['submit']}",
             context={"form": race_delete_form, "races": races},
         )
     else:
@@ -43,11 +56,11 @@ def race_index(request):
     races = Race.objects.all().order_by("race_date")
     context = {
         "races": races,
-        "debug_info": "2024 Nascar Races! (views/race_index) render(nascar/race/index.html)",
+        "debug_info": "2024 Nascar Races! (views/race_index) render(nascar/race_index.html)",
         # "form": form,
     }
     # print("race_index")
-    return render(request, "nascar/race/index.html", context=context)
+    return render(request, "nascar/race_index.html", context=context)
 
 
 # path("race/create/", views.race_create, name="race_create"),

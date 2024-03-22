@@ -1,0 +1,17 @@
+{% extends 'nascar/base.html' %}
+{% comment %}https://openclassrooms.com/en/courses/7107341-intermediate-django/7264795-include-multiple-forms-on-a-page{% endcomment %}
+{% block content %}
+  <h2>Edit Race</h2>
+  <form method="post">
+    {{ edit_form.as_p }}
+    {% csrf_token %}
+    <button type="submit">Save</button>
+  </form>
+  <hr />
+  <h3>Delete Race?</h3>
+  <form method="post">
+    {{ delete_form }}
+    {% csrf_token %}
+    <button type="submit">Delete</button>
+  </form>
+{% endblock %}

@@ -9,14 +9,26 @@ from .models import Driver, Player, Race
 # env > mysite > main > views.py
 
 
-class RaceDeleteForm(forms.ModelForm):
+# https://openclassrooms.com/en/courses/7107341-intermediate-django/7264795-include-multiple-forms-on-a-page
+class RaceForm(forms.ModelForm):
+    edit_race = forms.BooleanField(widget=forms.HiddenInput, initial=True)
     race_date = forms.DateField(widget=forms.DateInput(attrs={"type": "date"}))
-    race_name = forms.CharField(max_length=64, required=True, help_text="empty")
-    # delete_race = forms.CheckboxInput()
 
     class Meta:
         model = Race
-        fields = ["race_name", "track"]
+        fields = ["race_date", "track", "race_name"]
+
+
+# https://openclassrooms.com/en/courses/7107341-intermediate-django/7264795-include-multiple-forms-on-a-page
+class RaceDeleteForm(forms.Form):
+    delete_race = forms.BooleanField(widget=forms.HiddenInput, initial=True)
+    # race_date = forms.DateField(widget=forms.DateInput(attrs={"type": "date"}))
+    # race_name = forms.CharField(max_length=64, required=True, help_text="empty")
+    # delete_race = forms.CheckboxInput()
+
+    # class Meta:
+    #     model = Race
+    #     # fields = ["race_name", "track"]
 
 
 # https://www.techwithtim.net/tutorials/django/html-templates
