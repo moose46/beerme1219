@@ -63,7 +63,15 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "beer.urls"
 # Templates Directory
-
+LOGGING = {
+    "version": 1,
+    "level": "DEBUG",
+    "disable_existing_loggers": False,
+    "file": {
+        "class": "logging.FileHandler",
+        "filename": "general.log",
+    },
+}
 TEMPLATE_DIR = os.path.join(BASE_DIR, "templates")
 TEMPLATES = [
     {

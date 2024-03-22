@@ -5,7 +5,9 @@
   <form method="post">
     {{ edit_form.as_p }}
     {% csrf_token %}
-    <button type="submit">Save</button>
+    {% if race %}
+      <button id="{{ race.id }}" type="submit" action="">Save Race</button>
+    {% endif %}
   </form>
   <hr />
   <h3>Delete Race?</h3>

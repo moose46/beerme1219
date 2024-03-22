@@ -21,8 +21,9 @@
             <td>{{ race.race_name }}</td>
             <td>{{ race.track }}</td>
             <td>
-              <form method="post">
+              <form method="post" action="/nascar/race_edit">
                 {% csrf_token %}
+                {{ form }}
                 <button value="{{ race.id }}" name="submit" type="submit">Edit</button>
               </form>
             </td>

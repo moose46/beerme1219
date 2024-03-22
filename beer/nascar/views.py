@@ -1,3 +1,4 @@
+import logging
 import re
 from urllib import response
 
@@ -9,6 +10,8 @@ from matplotlib import widgets
 
 from .forms import BetForm, RaceDeleteForm, RaceForm, RaceIndexForm
 from .models import Driver, Race, Track
+
+logger = logging.getLogger(__name__)
 
 
 # Create your views here.
@@ -25,15 +28,34 @@ def tracks(request):
 
 
 # https://openclassrooms.com/en/courses/7107341-intermediate-django/7264795-include-multiple-forms-on-a-page
-def edit_race(request, race_id):
-    race = get_object_or_404(Race, id=race_id)
-    edit_form = RaceForm(instance=race)
-    delete_form = RaceDeleteForm()
-    print(f"in edit_race: {__name__}")
-    # if request == 'POST':
-    #     pass
-    context = {"edit_form": edit_form, "delete_form": delete_form}
-    return render(request, "nascar/edit_race.html", context=context)
+def race_edit(request):
+    logger.info(f"1. {__name__} before POST")
+    print("1. race_edit before POST")
+    if request.method == "POST":
+        data = request.POST
+        race = None
+        edit_form = None
+        delete_form = None
+        context = None
+        if "submit" in request.POST:
+            try:
+                race_id = request.POST.get("submit")
+                print("2. race_edit in POST")
+                race = get_object_or_404(Race, id=race_id)
+                edit_form = RaceForm(instance=race)
+                delete_form = RaceDeleteForm()
+                context = {
+                    "edit_form": edit_form,
+                    "delete_form": delete_form,
+                    "race": race,
+                }
+                return render(request, "nascar/race_edit.html", context=context)
+            except Exception as e:
+                print(f"{e}")
+                return
+        print(f"in edit_race: {__name__}")
+        # if request == 'POST':
+        #     pass
 
 
 # path("race/", views.race_index, name="race_index"),
@@ -43,12 +65,18 @@ def race_index(request):
         data = request.POST
         print(f"race_index:POST {request}")
         print(f"{data['submit']}")
-        race_delete_form = RaceDeleteForm()
-        races = Race.objects.all()
+        delete_form = RaceDeleteForm()
+        edit_form = RaceForm()
+        race = get_object_or_404(Race, id=data["submit"])
         return render(
             request,
-            f"nascar/edit_race.html/{data['submit']}",
-            context={"form": race_delete_form, "races": races},
+            f"nascar/race_edit.html",
+            # f"{data['submit']}/race_edit.html",
+            context={
+                "edit_form": edit_form,
+                "delete_form": delete_form,
+                "races": race,
+            },
         )
     else:
         print("race_index !POST")

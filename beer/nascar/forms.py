@@ -11,7 +11,7 @@ from .models import Driver, Player, Race
 
 # https://openclassrooms.com/en/courses/7107341-intermediate-django/7264795-include-multiple-forms-on-a-page
 class RaceForm(forms.ModelForm):
-    edit_race = forms.BooleanField(widget=forms.HiddenInput, initial=True)
+    edit_race_form = forms.BooleanField(widget=forms.HiddenInput, initial=True)
     race_date = forms.DateField(widget=forms.DateInput(attrs={"type": "date"}))
 
     class Meta:
