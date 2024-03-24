@@ -1,7 +1,7 @@
 from django import forms
 from django.db.models.lookups import GreaterThan
 from django.forms import DateInput
-from traitlets import default
+# from traitlets import default
 
 from .models import Driver, Player, Race
 
@@ -39,7 +39,7 @@ class RaceIndexForm(forms.ModelForm):
 
     class Meta:
         model = Race
-        fields = ["race_name", "track"]
+        fields = ["race_name", "track",]
 
 
 # https://docs.djangoproject.com/en/5.0/ref/models/expressions/

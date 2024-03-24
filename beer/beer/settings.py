@@ -75,6 +75,12 @@ LOGGING = {
             "filename": BASE_DIR / "warning.log",
         }
     },
+    'loggers': {
+    '': {
+        'handlers': ['console'],
+        }
+    },
+
     "loggers": {
         # notice the blank '', Usually you would put built in loggers like django or root here based on your needs
         "": {

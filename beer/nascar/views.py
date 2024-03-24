@@ -82,6 +82,7 @@ def race_edit(request):
 # path("race/", views.race_index, name="race_index"),
 # http://127.0.0.1:8081/nascar/race/
 def race_index(request):
+    logger.info("race_index Before POST")
     if request.method == "POST":
         data = request.POST
         print(f"race_index:POST {request}")

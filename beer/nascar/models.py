@@ -12,8 +12,8 @@ from tkinter.tix import Tree
 from django.contrib.auth.models import User
 from django.db import models
 from django.utils import timezone
-from traitlets import default
-from zmq import NULL
+# from traitlets import default
+# from zmq import NULL
 
 
 class Base(models.Model):
@@ -139,7 +139,7 @@ class Race(Base):
     class Meta:
         # managed = False
         db_table = "race"
-        ordering = ["race_date"]
+        ordering = ["race_date","track"]
         unique_together = (("race_date", "track"),)
 
 
