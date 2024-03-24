@@ -1,5 +1,6 @@
 import logging
 import re
+from pathlib import Path
 from urllib import response
 
 from django.contrib.auth.models import User
@@ -12,6 +13,19 @@ from .forms import BetForm, RaceDeleteForm, RaceForm, RaceIndexForm
 from .models import Driver, Race, Track
 
 logger = logging.getLogger(__name__)
+# file_path = Path.home() / "beerme1219" / "data"
+# log_file = Path.home() / "beerme1219" / "views_log.txt"
+# if not file_path.exists():
+#     file_path = Path.cwd() / "data"
+#     log_file = Path.cwd() / "views_log.txt"
+
+
+# logging.basicConfig(
+#     filename=log_file,
+#     level=logging.DEBUG,
+#     format="%(asctime)s - %(levelname)s - %(message)s",
+#     filemode="w",
+# )
 
 
 # Create your views here.
@@ -29,14 +43,21 @@ def tracks(request):
 
 # https://openclassrooms.com/en/courses/7107341-intermediate-django/7264795-include-multiple-forms-on-a-page
 def race_edit(request):
-    logger.info(f"1. {__name__} before POST")
+    print(f"logger.log: {logger.log}")
+    print(f"logger.name: {logger.name}")
+    logger.warning(f"1. {__name__} before POST")
     print("1. race_edit before POST")
+    logger.info("1. race_edit before POST")
     if request.method == "POST":
+        logger.info("race_edit POST")
         data = request.POST
         race = None
         edit_form = None
         delete_form = None
         context = None
+        if "edit_race_form" in request.POST:
+            logger.info("race_edit POST edit_race_form")
+            return
         if "submit" in request.POST:
             try:
                 race_id = request.POST.get("submit")

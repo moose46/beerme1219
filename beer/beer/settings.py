@@ -63,14 +63,33 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "beer.urls"
 # Templates Directory
+# https://www.freecodecamp.org/news/logging-in-python-debug-your-django-projects/
 LOGGING = {
     "version": 1,
-    "level": "DEBUG",
-    "disable_existing_loggers": False,
-    "file": {
-        "class": "logging.FileHandler",
-        "filename": "general.log",
+    # "disable_existing_loggers": False,
+    # django uses some of its own loggers for internal operations. In case you want to disable them just replace the False above with true.
+    "handlers": {
+        "file": {
+            "level": "WARNING",
+            "class": "logging.FileHandler",
+            "filename": BASE_DIR / "warning.log",
+        }
     },
+    "loggers": {
+        # notice the blank '', Usually you would put built in loggers like django or root here based on your needs
+        "": {
+            "handlers": [
+                "file"
+            ],  # notice how file variable is called in handler which has been defined above
+            "level": "WARNING",
+            "propagate": True,
+        },
+    },
+    # "level": "DEBUG",
+    # "file": {
+    #     "class": "logging.FileHandler",
+    #     "filename": "beerme1219_log.txt",
+    # },
 }
 TEMPLATE_DIR = os.path.join(BASE_DIR, "templates")
 TEMPLATES = [
