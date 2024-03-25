@@ -1,0 +1,18 @@
+1. nascar.views before POST
+Internal Server Error: /nascar/
+Traceback (most recent call last):
+  File "C:\Users\me\VsCodeProjects\beerme1219\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\me\VsCodeProjects\beerme1219\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\me\VsCodeProjects\beerme1219\beer\nascar\views.py", line 34, in index
+    logger.warning(f"1. {__name__.__module__} before POST")
+                         ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute '__module__'
+"GET /nascar/ HTTP/1.1" 500 79737
+1. nascar.views.index
+Not Found: /
+"GET / HTTP/1.1" 404 2164
+1. nascar.views.index

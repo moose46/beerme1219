@@ -12,7 +12,7 @@ from matplotlib import widgets
 from .forms import BetForm, RaceDeleteForm, RaceForm, RaceIndexForm
 from .models import Driver, Race, Track
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger('django')
 # file_path = Path.home() / "beerme1219" / "data"
 # log_file = Path.home() / "beerme1219" / "views_log.txt"
 # if not file_path.exists():
@@ -31,6 +31,7 @@ logger = logging.getLogger(__name__)
 # Create your views here.
 # http://localhost:8081/nascar/
 def index(request):
+    logger.warning(f"1. {__name__}.index")
     return HttpResponse("Hello World from nascar!")
 
 
